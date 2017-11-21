@@ -15,12 +15,12 @@
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}
+        <!--{{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}!-->
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage=(fieldError "picture")}}
       </div>
 
       <div class="field">
-        {{> Select_Form_Control label="Interests" options=interests errorMessage=(fieldError "interests") multiple=true }}
+        {{> Select_Form_Control label="Major" options=interests errorMessage=(fieldError "interests") multiple=true }}
       </div>
 
       <div class="fields">
