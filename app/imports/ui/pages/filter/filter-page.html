@@ -1,15 +1,75 @@
 <template name="Filter_Page">
   {{#if Template.subscriptionsReady}}
     <div style="margin-top: 10px" class="ui container">
+      <div class="ui grid">
+        <div class="six wide column">
+          <h1>Profile</h1>
+          <div class="ui card">
+            <div class="image">
+              <img src="/images/johnson.jpg">
+            </div>
+            <div class="content">
+              <a class="header">Phillip Johnson</a>
+              <div class="meta">
+                <span class="Major">Computer Engineering</span>
+              </div>
+              <div class="Bio">
+                I am a Professor of Information and Computer Sciences at the University of Hawaii.
+              </div>
+            </div>
+          </div>
 
-      <form class="ui equal width form filter-data-form">
-        <div class="field">
-          {{> Select_Form_Control label="Interests" options=interests multiple=true }}
         </div>
-        <button class="ui teal button" type="submit">Filter</button>
-      </form>
-
-      {{> Filter_Page_Directory profiles=profiles }}
+        <div class="ten wide column">
+          <h1>Todo List</h1>
+          <div class="ui fluid action input">
+          <input type="text" placeholder="Add Task">
+          <button class="ui button">Add</button>
+          </div>
+          <div class="ui middle aligned divided list">
+            <div class="item">
+              <div class="right floated content">
+                <div class="ui button">Done</div>
+              </div>
+              <div class="content">
+                [ICS314]User home page mock-up (Nov 21, Tuesday, 11:30pm)
+              </div>
+            </div>
+            <div class="item">
+              <div class="right floated content">
+                <div class="ui button">Done</div>
+              </div>
+              <div class="content">
+                [ICS314]Reflect on Ethics (Nov 30, Thursday, 11:30pm)
+              </div>
+            </div>
+            <div class="item">
+              <div class="right floated content">
+                <div class="ui button">Done</div>
+              </div>
+              <div class="content">
+                [ICS314]Reflect on Design Patterns (Dec 5, Tuesday, 11:30pm)
+              </div>
+            </div>
+            <div class="item">
+              <div class="right floated content">
+                <div class="ui button">Done</div>
+              </div>
+              <div class="content">
+                [ICS314]Final Project Milestone 2 (Dec 7, Thursday, 11:30pm)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui grid">
+        <div class="sixteen wide column">
+          <h1 class="ui horizontal divider">
+            FAVORITE STUDY BUDDIES
+          </h1>
+          {{> Filter_Page_Directory profiles=profiles }}
+        </div>
+      </div>
 
     </div>
   {{/if}}
