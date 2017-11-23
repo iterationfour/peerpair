@@ -68,6 +68,14 @@ userRoutes.route('/filter', {
   },
 });
 
+export const searchPageRouteName = 'Search_Page';
+userRoutes.route('/search', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: searchPageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
