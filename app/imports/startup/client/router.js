@@ -73,6 +73,12 @@ userRoutes.route('/admin', {
   name: adminPageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: adminPageRouteName });
+
+export const searchPageRouteName = 'Search_Page';
+userRoutes.route('/search', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: searchPageRouteName });
   },
 });
 
