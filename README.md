@@ -1,1 +1,1 @@
-UH Study Net
+UHStudyNet
