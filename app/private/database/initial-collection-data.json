@@ -14,7 +14,7 @@
         {
           "firstName": "Beejay",
           "lastName": "Ines",
-          "username": "altenber",
+          "username": "beejayi",
           "github": "beejayines",
           "bio": "I am a student at UH Manoa studying Computer Engineering.",
           "interests": [
@@ -54,18 +54,18 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/andrew.jpg"
+          "picture": ""
         },
         {
           "firstName": "Jessie",
           "lastName": "Grazziotin",
-          "username": "henric",
+          "username": "jlblanke",
           "github": "jessiejames",
           "bio": "I am a student studying Computer Engineering at the University of Hawaii",
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/jessie.jpg"
+          "picture": ""
         }
       ]
     }
