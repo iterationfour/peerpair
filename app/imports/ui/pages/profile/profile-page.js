@@ -34,6 +34,9 @@ Template.Profile_Page.helpers({
           };
         });
   },
+  userProfile() {
+    return Profiles.findDoc(FlowRouter.getParam('username'));
+  }
 });
 
 Template.Profile_Page.events({
