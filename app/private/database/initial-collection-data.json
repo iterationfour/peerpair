@@ -15,6 +15,7 @@
           "firstName": "Beejay",
           "lastName": "Ines",
           "username": "altenber",
+          "github": "beejayines",
           "bio": "I am a student at UH Manoa studying Computer Engineering.",
           "interests": [
             "Computer Engineering (BS)"
@@ -25,6 +26,7 @@
           "firstName": "Kian",
           "lastName": "Kobayashi",
           "username": "kiank ",
+          "github": "kiankoba",
           "bio": "I am a student studying Computer Science at the University of Hawaii.",
           "interests": [
             "Computer Science General (BS)"
@@ -32,35 +34,36 @@
           "picture": "/images/kiankobayashi.jpg"
         },
         {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Arisa",
+          "lastName": "Nakata",
+          "username": "arisan",
+          "bio": "I am a student studying English at the University of Hawaii.",
           "interests": [
-            "Computer Science General (BS)"
+            "English (BA)"
           ],
-          "picture": "/images/biagioni.jpg"
+          "picture": "/images/arisa.jpg"
         },
         {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Andrew",
+          "lastName": "Obatake",
+          "username": "aobatake",
+          "github": "aobatake",
+          "bio": "I am an student studying Computer Engineering at the University of Hawaii.",
           "interests": [
-            "Computer Science General (BS)"
+            "Computer Engineering (BS)"
           ],
-          "picture": "/images/binsted.jpg"
+          "picture": "/images/andrew.jpg"
         },
         {
-          "firstName": "Henri",
-          "lastName": "Casanova",
+          "firstName": "Jessie",
+          "lastName": "Grazziotin",
           "username": "henric",
-          "github": "henricasanova",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
+          "github": "jessiejames",
+          "bio": "I am a student studying Computer Engineering at the University of Hawaii",
           "interests": [
-            "Computer Science General (BS)"
+            "Computer Engineering (BS)"
           ],
-          "picture": "/images/casanova.jpg"
+          "picture": "/images/jessie.jpg"
         }
       ]
     }
