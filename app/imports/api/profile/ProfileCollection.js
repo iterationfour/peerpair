@@ -26,7 +26,7 @@ class ProfileCollection extends BaseCollection {
       bio: { type: String, optional: true },
       interests: { type: Array, optional: true },
       'interests.$': { type: String },
-      title: { type: String, optional: true },
+      //title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       github: { type: SimpleSchema.RegEx.Url, optional: true },
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
@@ -58,8 +58,8 @@ class ProfileCollection extends BaseCollection {
   define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', title = '', github = '',
       facebook = '', instagram = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
-      title: String };
+    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String/*,
+      title: String*/ };
     check({ firstName, lastName, username, bio, picture, title }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
@@ -91,11 +91,11 @@ class ProfileCollection extends BaseCollection {
     const bio = doc.bio;
     const interests = doc.interests;
     const picture = doc.picture;
-    const title = doc.title;
+    //const title = doc.title;
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram };
+    return { firstName, lastName, username, bio, interests, picture, /*title,*/ github, facebook, instagram };
   }
 }
 

@@ -1,85 +1,11 @@
 {
-  "comment": "Initial contents for the BowFolios database. For development purposes only.",
+  "comment": "Initial contents for the UHStudyNet database. For development purposes only.",
   "collections": [
     {
       "name": "InterestCollection",
       "contents": [
-        {
-          "name": "Software Engineering",
-          "description": "Techniques for development of high quality systems"
-        },
-        {
-          "name": "Algorithms",
-          "description": "A set of rules to be followed in computation"
-        },
-        {
-          "name": "Mobile Networks",
-          "description": "Networks created using mobile devices."
-        },
-        {
-          "name": "Sailing",
-          "description": ""
-        },
-        {
-          "name": "Mars",
-          "description": ""
-        },
-        {
-          "name": "Imu Cooking",
-          "description": "Hawaiian practice of cooking in a pit."
-        },
-        {
-          "name": "Scuba",
-          "description": ""
-        },
-        {
-          "name": "Photography",
-          "description": ""
-        },
-        {
-          "name": "Wind surfing",
-          "description": ""
-        },
-        {
-          "name": "Psychology",
-          "description": ""
-        },
-        {
-          "name": "Motorcycling",
-          "description": ""
-        },
-        {
-          "name": "Accreditation",
-          "description": ""
-        },
-        {
-          "name": "Paddling",
-          "description": ""
-        },
-        {
-          "name": "Crossfit",
-          "description": ""
-        },
-        {
-          "name": "Cybersecurity",
-          "description": ""
-        },
-        {
-          "name": "Surfing",
-          "description": ""
-        },
-        {
-          "name": "Computer Vision",
-          "description": ""
-        },
-        {
-          "name": "Martial Arts",
-          "description": ""
-        },
-        {
-          "name": "Evolutionary Computation",
-          "description": ""
-        }
+        {"name": "Accounting (BBA)","description": ""},{"name": "American Studies (BA)","description": ""},{"name": "Animal Sciences (BS)","description": ""},{"name": "Anthropology (BA)","description": ""},{"name": "Art (BFA)","description": ""},{"name": "Art History (BA)","description": ""},{"name": "Art Studio (BA)","description": ""},{"name": "Asian Studies (BA)","description": ""},{"name": "Astronomy (BA)","description": ""},{"name": "Astrophysics (BS)","description": ""},{"name": "Atmospheric Sciences (BS)","description": ""},{"name": "Biochemistry (BA)","description": ""},{"name": "Biochemistry (BS)","description": ""},{"name": "Biological Engineering (BS)","description": ""},{"name": "Biology (BA)","description": ""},{"name": "Biology (BS)","description": ""},{"name": "Botany (BA)","description": ""},{"name": "Botany (BS)","description": ""},{"name": "Chemistry (BA)","description": ""},{"name": "Chemistry (BS)","description": ""},{"name": "Chinese (BA)","description": ""},{"name": "Chinese Language Flagship (BA)","description": ""},{"name": "Civil Engineering (BS)","description": ""},{"name": "Classics (BA)","description": ""},{"name": "Communication (BA)","description": ""},{"name": "Communicology (BA)","description": ""},{"name": "Computer Engineering (BS)","description": ""},{"name": "Computer Science General (BS)","description": ""},{"name": "Computer Science Security Science (BS)","description": ""},{"name": "Creative Media: Computer Animation (BA)","description": ""},{"name": "Creative Media: Digital Cinema (BA)","description": ""},{"name": "Dance (BA)","description": ""},{"name": "Dance (BFA)","description": ""},{"name": "Dental Hygiene (BS)","description": ""},{"name": "Early Childhood and Early Childhood Special Education (BEd)","description": ""},{"name": "Economics (BA)","description": ""},{"name": "Economics: Quantitative Economics (BA)","description": ""},{"name": "Electrical Engineering (BS)","description": ""},{"name": "Elementary Education (BEd)","description": ""},{"name": "Elementary Education and Early Childhood Education (BEd)","description": ""},{"name": "Elementary Education and Multilingual Learning (BEd)","description": ""},{"name": "Elementary Education and Special Education (BEd)","description": ""},{"name": "English (BA)","description": ""},{"name": "Entrepreneurship (BBA)","description": ""},{"name": "Environmental Design (BEnvD)","description": ""},{"name": "Ethnic Studies (BA)","description": ""},{"name": "Ethnobotany (BS)","description": ""},{"name": "Family Resources (BS)","description": ""},{"name": "Fashion Design and Merchandising (BS)","description": ""},{"name": "Finance (BBA)","description": ""},{"name": "Food Science and Human Nutrition: Food Science: Business (BS)","description": ""},{"name": "Food Science and Human Nutrition: Food Science: Culinology (BS)","description": ""},{"name": "Food Science and Human Nutrition: Food Science: Preprofessional (BS)","description": ""},{"name": "Food Science and Human Nutrition: Human Nutrition: Dietetics (BS)","description": ""},{"name": "Food Science and Human Nutrition: Human Nutrition: PreProfessional (BS)","description": ""},{"name": "Food Science and Human Nutrition: Human Nutrition: Sports Wellness (BS)","description": ""},{"name": "French (BA)","description": ""},{"name": "Generic Template (BBA)","description": ""},{"name": "Geography (BA)","description": ""},{"name": "Geology and Geophysics(BS)","description": ""},{"name": "Geology: Earth Science Education (BA)","description": ""},{"name": "Geology: Environmental Earth Science (BA)","description": ""},{"name": "German (BA)","description": ""},{"name": "Global Environmental Science: Environmental Health Sciences (BS)","description": ""},{"name": "Global Environmental Science: Environmental Planning (BS)","description": ""},{"name": "Global Environmental Science: General Pathway (BS)","description": ""},{"name": "Global Environmental Science: Sustainability Science (BS)","description": ""},{"name": "Global Environmental Science: Sustainable Tourism (BS)","description": ""},{"name": "Hawaiian Language (BA)","description": ""},{"name": "Hawaiian Studies(BA)","description": ""},{"name": "History (BA)","description": ""},{"name": "Human Resource Management (BBA)","description": ""},{"name": "Information and Computer Sciences General (BA)","description": ""},{"name": "Information and Computer Sciences IT (BA)","description": ""},{"name": "Information and Computer Sciences Security Science (BA)","description": ""},{"name": "International Business (Second Major Only)","description": ""},{"name": "Japanese (BA)","description": ""},{"name": "Journalism (BA)","description": ""},{"name": "Kinesiology & Rehabilitation Science: Health and Exercise Science (BS)","description": ""},{"name": "Kinesiology & Rehabilitation Science: Health and Physical Education (BS)","description": ""},{"name": "Korean (BA)","description": ""},{"name": "Korean: Korean for Professionals (BA)","description": ""},{"name": "Management (BBA)","description": ""},{"name": "Management Information Systems (BBA)","description": ""},{"name": "Marine Biology (BS)","description": ""},{"name": "Marketing (BBA)","description": ""},{"name": "Mathematics (BA)","description": ""},{"name": "Mathematics (BS)","description": ""},{"name": "Mechanical Engineering (BS) ","description": ""},{"name": "Medical Technology (BS)","description": ""},{"name": "Microbiology (BA)","description": ""},{"name": "Microbiology (BS)","description": ""},{"name": "Molecular Biosciences and Biotechnology (BS)","description": ""},{"name": "Molecular Cell Biology (BS)","description": ""},{"name": "Music: Compostiion (BMus)","description": ""},{"name": "Music: General Music (BA)","description": ""},{"name": "Music: Hawaiian Music (BA)","description": ""},{"name": "Music: Instrumental (BMus)","description": ""},{"name": "Music: Musical Theater (BA)","description": ""},{"name": "Music: Piano (BMus)","description": ""},{"name": "Music: Voice (BMus)","description": ""},{"name": "Natural Resources and Environmental Management: Natural Science Pathway (BS)","description": ""},{"name": "Natural Resources and Environmental Management: Social Science Pathway (BS)","description": ""},{"name": "Nursing: Executive RN to BS (BS)","description": ""},{"name": "Nursing: Hawaiʻi Statewide Nursing Consortium (ADN) (BS)","description": ""},{"name": "Nursing: Hawaiʻi Statewide Nursing Consortium (BS)","description": ""},{"name": "Nursing: Hawaiʻi Statewide Nursing Consortium (HS-DEN) (BS)","description": ""},{"name": "Nursing: RN to BS (BS) ","description": ""},{"name": "Pacific Island Studies (BA)","description": ""},{"name": "Philippine Language and Literature: Filipino (BA)","description": ""},{"name": "Philippine Language and Literature: Ilokano (BA)","description": ""},{"name": "Philosophy (BA)","description": ""},{"name": "Physics (BA)","description": ""},{"name": "Physics (BS)","description": ""},{"name": "Political Science (BA)","description": ""},{"name": "Psychology (BA)","description": ""},{"name": "Psychology (BS)","description": ""},{"name": "Public Health (BA)","description": ""},{"name": "Religion (BA)","description": ""},{"name": "Russian (BA)","description": ""},{"name": "Second Language Studies (BA)","description": ""},{"name": "Secondary Education: Biology (BEd)","description": ""},{"name": "Secondary Education: Chemistry (BEd)","description": ""},{"name": "Secondary Education: Chinese (BEd)","description": ""},{"name": "Secondary Education: Earth and Space Science (BEd)","description": ""},{"name": "Secondary Education: English (BEd)","description": ""},{"name": "Secondary Education: French (BEd)","description": ""},{"name": "Secondary Education: General Science (BEd)","description": ""},{"name": "Secondary Education: German (BEd)","description": ""},{"name": "Secondary Education: Hawaiian (BEd)","description": ""},{"name": "Secondary Education: Latin (BEd)","description": ""},{"name": "Secondary Education: Mathematics (BEd)","description": ""},{"name": "Secondary Education: Music-General (BEd)","description": ""},{"name": "Secondary Education: Music-Instrumental (BEd)","description": ""},{"name": "Secondary Education: Philippine Language-Filipino (BEd)","description": ""},{"name": "Secondary Education: Philippine Language-Ilokano (BEd)","description": ""},{"name": "Secondary Education: Physical Science (BEd)","description": ""},{"name": "Secondary Education: Physics (BEd)","description": ""},{"name": "Secondary Education: Russian (BEd)","description": ""},{"name": "Secondary Education: Social Studies (BEd)","description": ""},{"name": "Secondary Education: Spanish (BEd)","description": ""},{"name": "Secondary Education:Japanese (BEd)","description": ""},{"name": "Social Work (BSW)","description": ""},{"name": "Sociology (BA)","description": ""},{"name": "Spanish (BA)","description": ""},{"name": "Theatre (BA)","description": ""},{"name": "Travel Industry Management: Hospitality Management (BS)","description": ""},{"name": "Travel Industry Management: Tourism/Transportation Management (BS)","description": ""},{"name": "Tropical Agriculture and the Environment: Environmental Soil Sciences (BS)","description": ""},{"name": "Tropical Agriculture and the Environment: Invasive Species Management (BS)","description": ""},{"name": "Tropical Agriculture and the Environment: Landscape Horticulture","description": ""},{"name": "Tropical Agriculture and the Environment: Plant Physiology and Genetics (BS)","description": ""},{"name": "Tropical Agriculture and the Environment: Plant Production and Management (BS)","description": ""},{"name": "Women's Studies (BA)","description": ""},{"name": "Zoology (BA)","description": ""},{"name": "Zoology (BS)","description": ""}
+
       ]
     },
     {
@@ -89,60 +15,57 @@
           "firstName": "Beejay",
           "lastName": "Ines",
           "username": "altenber",
-          "bio": "I am student at UH Manoa studying Computer Engineering",
+          "github": "beejayines",
+          "bio": "I am a student at UH Manoa studying Computer Engineering.",
           "interests": [
-            "Evolutionary Computation"
+            "Computer Engineering (BS)"
           ],
-          "title": "Computer Science",
-          "picture": "/images/Beejay.jpg"
+          "picture": "/images/beejay.jpg"
         },
         {
-          "firstName": "Kyungim",
-          "lastName": "Baek",
-          "username": "baek",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Kian",
+          "lastName": "Kobayashi",
+          "username": "kiank ",
+          "github": "kiankoba",
+          "instagram": "aryite",
+          "facebook": "profile.php?id=100000169410676",
+          "bio": "I am a student studying Computer Science at the University of Hawaii.",
           "interests": [
-            "Computer Vision"
+            "Computer Science General (BS)"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/baek.jpg"
+          "picture": "/images/kiankobayashi.jpg"
         },
         {
-          "firstName": "Edo",
-          "lastName": "Biagioni",
-          "username": "esb",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Arisa",
+          "lastName": "Nakata",
+          "username": "arisan",
+          "bio": "I am a student studying English at the University of Hawaii.",
           "interests": [
-            "Mobile Networks",
-            "Sailing"
+            "English (BA)"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/biagioni.jpg"
+          "picture": "/images/arisa.jpg"
         },
         {
-          "firstName": "Kim",
-          "lastName": "Binsted",
-          "username": "binsted",
-          "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "firstName": "Andrew",
+          "lastName": "Obatake",
+          "username": "aobatake",
+          "github": "aobatake",
+          "bio": "I am an student studying Computer Engineering at the University of Hawaii.",
           "interests": [
-            "Mars",
-            "Imu Cooking"
+            "Computer Engineering (BS)"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
-          "picture": "/images/binsted.jpg"
+          "picture": "/images/andrew.jpg"
         },
         {
-          "firstName": "Henri",
-          "lastName": "Casanova",
+          "firstName": "Jessie",
+          "lastName": "Grazziotin",
           "username": "henric",
-          "github": "henricasanova",
-          "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
+          "github": "jessiejames",
+          "bio": "I am a student studying Computer Engineering at the University of Hawaii",
           "interests": [
-            "Surfing",
-            "Photography"
+            "Computer Engineering (BS)"
           ],
-          "title": "Professor, Information and Computer Sciences",
-          "picture": "/images/casanova.jpg"
+          "picture": "/images/jessie.jpg"
         }
       ]
     }
