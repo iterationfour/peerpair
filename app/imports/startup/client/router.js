@@ -52,19 +52,19 @@ const userRoutes = FlowRouter.group({
   triggersExit: [removeUserBodyClass],
 });
 
+export const editProfilePageRouteName = 'Edit_Profile_Page';
+userRoutes.route('/edit_profile', {
+  name: editProfilePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: editProfilePageRouteName });
+  },
+});
+
 export const profilePageRouteName = 'Profile_Page';
 userRoutes.route('/profile', {
   name: profilePageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: profilePageRouteName });
-  },
-});
-
-export const filterPageRouteName = 'Filter_Page';
-userRoutes.route('/filter', {
-  name: filterPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: filterPageRouteName });
   },
 });
 
