@@ -30,7 +30,9 @@ Template.Search_Page.helpers({
         function makeInterestObject(interest) {
           return {
             label: interest.name,
-            selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+            //selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+            //There were too many options (156 to be exact) so I commented this line out
+            //This line makes it so that all options are selected by default when the page is loaded
           };
         });
   },
