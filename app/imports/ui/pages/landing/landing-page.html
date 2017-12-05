@@ -1,57 +1,23 @@
 <template name="Landing_Page">
-  <div class="ui top landing borderless inverted menu">
-    <div class="ui container">
-      <div class="item"><h1>UHStudyNet</h1></div>
-      <div class="right aligned item">{{> Cas_Login }}</div>
-    </div>
-  </div>
-  <div class="ui jumbotron">
-    <div class="ui jumbotron grid">
-      <div class="ui two wide column"></div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Find a your next study group!</h1>
+  <div class="ui landing">
+    <div class="ui landing-menu borderless menu">
+      <div class="ui container">
+        <div class="item"><h1 class="white">UHStudyNet</h1></div>
+        <div class="right aligned item">
+          <a href="https://uhstudynet.github.io" class="{{size}} ui inverted basic button">About</a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/uhstudynet/uhstudynet" class="{{size}} ui inverted basic button">Github</a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="landing-section-3">
-  </div>
-
-  <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui four wide middle aligned column">
-        <h1 class="landing-section-header">Are classes overwhelming?</h1>
-        <h1 class="landing-section-header">Frustrated from studying alone?</h1>
-      </div>
-      <div class="ui eight wide middle aligned column">
-      </div>
-      <div class="ui four wide middle aligned column ">
-        <h1 class="landing-section-header">Don't know how to get help?</h1>
-        <h1 class="landing-section-header">Feel lost?</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="landing-section-3">
-  </div>
-
-  <div class="landing-section-4">
-    <div class="ui grid">
-      <div class="ui four wide column"></div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Find students with the same classes</h1>
-        <h1 class="landing-section-header">Set up meet up places and times</h1>
-      </div>
-      <div class="ui four wide column"></div>
-    </div>
-  </div>
-
-  <div class="landing-section-5">
-    <div class="ui grid">
-      <div class="ui center aligned sixteen wide column">
+    <div class="ui padded grid landing-container">
+      <div class="four wide column"></div>
+      <div class="ui eight wide column middle aligned">
+        <h1 class="landing-header">Study Group Networking for UHM</h1>
         {{> Cas_Login size="large"}}
       </div>
+      <div class="four wide column"></div>
     </div>
   </div>
-
 </template>

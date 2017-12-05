@@ -1,67 +1,29 @@
-.ui.top.landing.menu {
-  margin: 0;
-}
-
-.ui.jumbotron {
+.ui.landing {
   font-family: 'Roboto', sans-serif;
-  height: 500px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(./images/study.jpg);
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(./images/study.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
 
-.ui.jumbotron.grid {
+.ui.landing-container {
+  text-align: center;
+  height: 80vh;
+}
+
+.ui.landing-menu {
+  background: none;
   margin: 0;
 }
 
-.landing-section-2 {
-  padding: 50px;
-  background-image: url(./images/sad_pug.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  color:  #ffffff;
+.white {
+  color: white;
 }
 
-.landing-section-4 {
-  padding: 50px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(./images/study_grp.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
-  background-size: cover;
-  color: #FFFFFF;
-}
-
-
-.landing-section-3 {
-  padding: 20px 10px 30px 30px;
-  background-color: #002984;
-  color: #ffffff;
-  height: 80px;
-}
-
-.landing-section-5 {
-  padding: 20px 10px 20px 10px;
-  background-color: #3f51b5;
-  color: #E5F9E7;
-}
-
-
-.landing-section-1-welcome {
+.landing-header {
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 72px;
-}
-
-.landing-section-header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-}
-
-.landing-section2-header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 300;
+  font-size: 40px;
+  margin: 10px 0;
 }
