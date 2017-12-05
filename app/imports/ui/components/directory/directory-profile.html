@@ -3,7 +3,11 @@
   <div class="card">
     <div class="content">
 
-      <img class="right floated mini ui image" src="{{ profile.picture }}">
+      {{#if profile.picture}}
+        <img class="right floated mini ui image" src="{{ profile.picture }}">
+      {{else}}
+        <img class="right floated mini ui image" src="/images/placeholder.png">
+      {{/if}}
       <div class="header">
         {{ profile.firstName }} {{ profile.lastName }}
       </div>
