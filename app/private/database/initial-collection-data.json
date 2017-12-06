@@ -94,6 +94,21 @@
             "Dance (BA)"
           ],
           "picture": ""
+        },
+
+        {
+          "firstName": "Camden",
+          "lastName": "Ramirez",
+          "username": "camdenr ",
+          "github": "",
+          "instagram": "kamucamden_",
+          "facebook": "",
+          "bio": "I am a student studying Japanese, and Second language Studies at University of Hawaii",
+          "interests": [
+            "Japanese (BA)",
+            "Second Language Studies (BA)"
+          ],
+          "picture": "/images/camden.jpg"
         }
 
       ]
