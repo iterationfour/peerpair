@@ -29,11 +29,11 @@
           "github": "kiankoba",
           "instagram": "aryite",
           "facebook": "profile.php?id=100000169410676",
-          "bio": "I am a student studying Computer Science at the University of Hawaii.",
+          "bio": "I am a student studying Computer Science at the University of Hawaii. I'm interested in software development and I'm fluent in Japanese. My dream is to live in Japan after I graduate.",
           "interests": [
             "Computer Science General (BS)"
           ],
-          "picture": "/images/kiankobayashi.jpg"
+          "picture": "/images/kian.jpg"
         },
         {
           "firstName": "Arisa",
@@ -390,7 +390,7 @@
           ],
           "picture": "/images/tyler.jpg"
         }
-        
+
       ]
     }
   ]
