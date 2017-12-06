@@ -99,7 +99,7 @@
         {
           "firstName": "Camden",
           "lastName": "Ramirez",
-          "username": "camdenr ",
+          "username": "camdenr",
           "github": "",
           "instagram": "kamucamden_",
           "facebook": "",
@@ -109,6 +109,20 @@
             "Second Language Studies (BA)"
           ],
           "picture": "/images/camden.jpg"
+        },
+
+        {
+          "firstName": "Kenneth",
+          "lastName": "Lauritzen",
+          "username": "klauritz",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "I am a junior studying Computer Engineering at the University of Hawaii.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "/images/kenneth.png"
         }
 
       ]
