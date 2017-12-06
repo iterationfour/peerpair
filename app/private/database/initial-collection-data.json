@@ -178,7 +178,7 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/joslyn.jpg"
+          "picture": "/images/emily.jpg"
         },
 
         {
@@ -192,9 +192,205 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/joslyn.jpg"
-        }
+          "picture": "/images/jaimie.jpg"
+        },
 
+        {
+          "firstName": "Mark",
+          "lastName": "Cacal",
+          "username": "markc",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Mark Cacal is a Senior studying Electrical Engineering in the Electro-Physics Track at UH Manoa. He is an officer for Institute of Electrical and Electronics Engineers (IEEE) and American Indian Science and Engineering Society (AISES). Currently, Mark is pledging to be inducted into Eta Kappa Nu, which is the Honor Society for the Electrical Engineering majors. Mark is participating in SCEL's 296 and plans on joining the Leadership team and becoming a mentor for the next generation of 296 teams",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/mark.jpg"
+        },
+
+        {
+          "firstName": "Kevin",
+          "lastName": "Cho",
+          "username": "kevinc",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Kevin Cho is a senior majoring in computer engineering at the University of Hawaii at Manoa. For the Summer of 2016 he interned at Northrop Grumman in the Microelectronics department studying High Electron Mobility Transistors on III-V compounds. His academic interests include graph theory, big data, and RF circuits. He hopes to find a job that challenges him and aligns closely with his academic interests. In his free time, he enjoys watching anime, lifting weights, and hanging out with friends.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "/images/kevin.jpg"
+        },
+
+        {
+          "firstName": "Josh Renzo",
+          "lastName": "Claudio",
+          "username": "joshrc",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Josh Renzo Claudio is a Sophomore Electrical Engineering Student at the University of Hawai'i at Manoa. He is currently a member of IEEE and Circle K international as well as the current Varsity coach for Waipahu High School's Math Team. Currently, Josh is also conducting research with Manoa's Smart Campus Energy Lab. His academic interests include renewable energy and automated systems. Some of his hobbies include playing guitar, hiking, and watching movies.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "/images/josh.jpg"
+        },
+
+        {
+          "firstName": "Kyaw",
+          "lastName": "Hein",
+          "username": "kyaw",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Kyaw Hein is a senior in Electrical Engineering, Electro-Physics Track. He is currently working as a team lead for Apple Weather box at Smart Campus Energy Lab. His academic interests are hardware and circuit designs.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/kyaw.jpg"
+        },
+
+        {
+          "firstName": "Sawinna",
+          "lastName": "Huang",
+          "username": "sawinna",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Sawinna Huang is a junior at the University of Hawai'i at Manoa majoring in Electrical Engineering in the Systems track. Her academic interest include renewable energy and communications. In her free time, she enjoys playing piano and sleeping.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/sawinna.jpg"
+        },
+
+        {
+          "firstName": "Emily",
+          "lastName": "Cane",
+          "username": "emilyk",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Emily Kane is a Junior pursuing her Electrical Engineering degree at the University of Hawaii at Manoa in the Electro-Physics track. She is originally from California, and is enjoying her time in Hawaii. She is currently a member of the IEEE student branch.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/emilyk.jpg"
+        },
+
+        {
+          "firstName": "Kevin",
+          "lastName": "Liu",
+          "username": "kevinl",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Kevin Liu is currently a sophomore majoring in Computer Engineering at the University of Hawai'i at Manoa. He is the Vice-President of Communications for the Engineers' Council at the University of Hawai'i as well as the Public Relations Officer of the Institute of Electrical and Electronics Engineers. His academic interests are involving with computers. His hobbies include videography, photography, and K-pop.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "/images/kevinl.jpg"
+        },
+
+        {
+          "firstName": "Joseph",
+          "lastName": "McConnel",
+          "username": "josephm",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "His name is Joseph McConnell, but call him Joe for short. He is a sophomore in electrical engineering heading down the electro-physics track. He is an environmentalist at heart, driving an electric car and recycling in his spare time. He's weird because he loves cleaning - as in chores. No he will not come clean your house.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/joseph.jpg"
+        },
+
+        {
+          "firstName": "Rebecca",
+          "lastName": "Rupley",
+          "username": "rebecca",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Rebecca Rupley is a senior at the University of Hawai'i at Manoa majoring in Electrical Engineering in the electro-physics track. She enjoys learning about power engineering, playing basketball, and eating chips.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/rebecca.jpg"
+        },
+
+        {
+          "firstName": "Katherine",
+          "lastName": "Shun-Gilmour",
+          "username": "katherine",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Katherine Shun-Gilmour is a Senior pursuing a degree in Electrical Engineering at the University of Hawaii at Manoa. She is currently the Vice President of Membership for the Society of Women Engineers and the Public Relations officer for the American Indian Science and Engineering Society. Her academic interests are in renewable energy. She enjoys hiking, going to the beach and adventuring in her free time.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/katherine.jpg"
+        },
+
+        {
+          "firstName": "Dylan",
+          "lastName": "Tokita",
+          "username": "dylan",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Dylan Tokita is currently a senior in Electrical Engineering. His academic interests include programming and math.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "/images/dylan.jpg"
+        },
+
+        {
+          "firstName": "Kevin",
+          "lastName": "Wong",
+          "username": "kevinw",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Kevin J. Wong is a senior pursuing a bachelor’s degree in electrical engineering at the University of Hawaii at Manoa, expecting to graduate in Spring 2018. He is currently thinking of specializing in the electro-physics track, with a particular interest in hardware, circuit, and PCB design. He is currently involved in the Smart Campus Energy Lab (SCEL) as a hardware engineer. His career goal it to be able to use his obtained engineering knowledge to help solve relevant problems. His hobbies include reading manga, watching Korean dramas, hiking, eating, and sleeping.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/kevinw.jpg"
+        },
+
+        {
+          "firstName": "Alex",
+          "lastName": "Wong",
+          "username": "alex",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Alex Wong is a sophomore at the University of Hawaii at Manoa pursuing a Bachelor's Degree in Electrical Engineering. His academic interests include software programming and circuit analysis. In his free time, he enjoys working out and spending time with his friends and family.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/alex.jpg"
+        },
+
+        {
+          "firstName": "Tyler",
+          "lastName": "Yamauchi",
+          "username": "tyler",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Tyler J. R. Yamauchi is a Senior pursuing a bachelor’s degree in electrical engineering at the University of Hawaii at Manoa. He hopes to graduate in 2018 and is currently making strides to specialize in the electro-physics track, with a possible focus on device physics. He is currently a hardware engineer for the Smart Campus Energy Lab (SCEL) and a board member for IEEE. Tyler plans to pursue work after graduation with the hope of returning to school later on for a higher degree. A hobby of his is playing in the University of Hawaii Marching Band.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/tyler.jpg"
+        }
+        
       ]
     }
   ]
