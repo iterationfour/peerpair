@@ -123,6 +123,76 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kenneth.png"
+        },
+
+        {
+          "firstName": "Kayla",
+          "lastName": "Amano",
+          "username": "kayla",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Kayla is a senior in Electrical Engineering at the University of Hawaii at Manoa in the Electro-Physics track. Her academic interest is electromagnetics. In her free time she enjoys painting and playing basketball.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/kayla.jpg"
+        },
+
+        {
+          "firstName": "Jennifer",
+          "lastName": "Chun",
+          "username": "jennifer",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Jennifer Chun is a senior in Electrical Engineering in the electrophysics track at the University of Hawaii at Manoa. She is currently a member of the Smart Campus Energy Lab and the IEEE student branch. Her academic interests include renewable energy and programming. Some of her hobbies are reading, hiking and playing tennis.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/jennifer.jpg"
+        },
+
+        {
+          "firstName": "Joslyn",
+          "lastName": "Hamada",
+          "username": "joslyn",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Joslyn Hamada is a senior pursuing a bachelor's degree in Electrical Engineering, Electro-Physics track, at the University of Hawaii at Manoa. She is currently working in the Smart Campus Energy Lab on the Weatherbox project, due to her interests in hardware and PCB design. She is also the Chair of the IEEE Student Branch and an officer for the Delta Omega chapter of Eta Kappa Nu, the electrical and computer engineering honor society.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/joslyn.jpg"
+        },
+
+        {
+          "firstName": "Emily",
+          "lastName": "Lum",
+          "username": "emily",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Emily Lum is a junior majoring in electrical engineering at the University of Hawaii at Manoa. Her academic interests include circuit design and math. In her free time, she enjoys playing video games and sleeping.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/joslyn.jpg"
+        },
+
+        {
+          "firstName": "Jaimie",
+          "lastName": "Obatake",
+          "username": "jaimie",
+          "github": "",
+          "instagram": "",
+          "facebook": "",
+          "bio": "Jaimie is a senior in Electrical Engineering with a focus in the systems track. She is the current Project Manager for the 2017-2018 school year. She was a member of the forecasting team and a mentor for a 196 team. Her academic interests include machine learning, image processing, and biology. In her free time, she enjoys baking and cooking.",
+          "interests": [
+            "Electrical Engineering (BS)"
+          ],
+          "picture": "/images/joslyn.jpg"
         }
 
       ]
