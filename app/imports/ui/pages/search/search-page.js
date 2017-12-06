@@ -41,7 +41,7 @@ Template.Search_Page.helpers({
 Template.Search_Page.events({
   'submit .filter-data-form'(event, instance) {
     event.preventDefault();
-    const selectedOptions = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
+    const selectedOptions = _.filter(event.target.Majors.selectedOptions, (option) => option.selected);
     instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
   },
 });
