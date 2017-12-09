@@ -2,15 +2,30 @@
   {{#if Template.subscriptionsReady}}
     <div style="margin-top: 10px" class="ui container">
 
-      <form class="ui equal width form filter-data-form">
-        <div class="field">
-          {{> Select_Form_Control label="Last Name" options=lastName multiple=true }}
-        </div>
-        <button class="ui blue button" type="submit">Filter</button>
-      </form>
+      <table style="margin-top: 20px" class="ui celled table">
+        <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Edit</th>
+        </tr>
+        </thead>
 
-      {{> Admin_Page_Directory profiles=profiles }}
+        <tbody>
+        {{#each profile in profiles}}
+        <tr>
+          <td>{{profile.firstName}}</td>
+          <td>{{profile.lastName}}</td>
+          <td>{{profile.email}}</td>
+          <td></td>
+          <td><a href="{{pathFor 'Edit_Contact_Page' _id=profile._id}}">Delete</a></td>
+        </tr>
+        {{/each}}
+        </tbody>
+      </table>
 
     </div>
   {{/if}}
 </template>
+
