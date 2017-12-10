@@ -89,3 +89,21 @@ FlowRouter.notFound = {
     BlazeLayout.render('Page_Not_Found');
   },
 };
+
+
+/*                        ADMIN ROUTES                       */
+
+// I know we should be doing something like this but I couldn't figure it out....
+export const adminRoutes = userRoutes.group({
+  prefix: '/admin',
+  name: 'adminRoutes',
+});
+
+
+export const deleteProfile = 'Delete_Profile_Page';
+adminRoutes.route('/delete-profile/:_id', {
+  name: deleteProfile,
+  action() {
+    BlazeLayout.render('User_Layout', { main: deleteProfile });
+  },
+});
