@@ -7,8 +7,8 @@
         <tr>
           <th>First</th>
           <th>Last</th>
-          <th>Email</th>
-          <th>Edit</th>
+          <th>Report</th>
+          <th>Profile Admin</th>
         </tr>
         </thead>
 
@@ -17,9 +17,15 @@
         <tr>
           <td>{{profile.firstName}}</td>
           <td>{{profile.lastName}}</td>
-          <td>{{profile.email}}</td>
-          <td></td>
-          <td><a href="{{pathFor 'Edit_Contact_Page' _id=profile._id}}">Delete</a></td>
+          {{#if profile.report}}
+          <td>
+            <i class="red warning circle icon"></i>
+            - reported
+          </td>
+          {{else}}
+          <td>no reports</td>
+          {{/if}}
+          <td><a href="{{pathFor 'Edit_Profile_Page' username=profile.username}}">Delete / Edit</a></td>
         </tr>
         {{/each}}
         </tbody>
