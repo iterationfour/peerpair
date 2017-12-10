@@ -30,7 +30,7 @@ class ProfileCollection extends BaseCollection {
       github: { type: SimpleSchema.RegEx.Url, optional: true },
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
       instagram: { type: SimpleSchema.RegEx.Url, optional: true },
-      report: { type: Boolean}
+      report: { type: Boolean },
     }, { tracker: Tracker }));
   }
 
@@ -56,9 +56,10 @@ class ProfileCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', github = '',
-      facebook = '', instagram = '' , report = ''}) {
+      facebook = '', instagram = '', report = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String, report: Boolean };
+    const checkPattern = { firstName: String, lastName: String, username: String,
+      bio: String, picture: String, report: Boolean };
     check({ firstName, lastName, username, bio, picture, report }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
@@ -96,7 +97,6 @@ class ProfileCollection extends BaseCollection {
     const report = doc.report;
     return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report };
   }
-
 
 
 }
