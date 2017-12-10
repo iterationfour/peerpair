@@ -20,7 +20,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/beejay.jpg"
+          "picture": "/images/beejay.jpg",
+          "report": false
         },
         {
           "firstName": "Kian",
@@ -33,7 +34,8 @@
           "interests": [
             "Computer Science General (BS)"
           ],
-          "picture": "/images/kian.jpg"
+          "picture": "/images/kian.jpg",
+          "report": false
         },
         {
           "firstName": "Arisa",
@@ -43,7 +45,8 @@
           "interests": [
             "English (BA)"
           ],
-          "picture": "/images/arisa.jpg"
+          "picture": "/images/arisa.jpg",
+          "report": false
         },
         {
           "firstName": "Andrew",
@@ -54,7 +57,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": ""
+          "picture": "",
+          "report": false
         },
         {
           "firstName": "Jessie",
@@ -65,7 +69,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": ""
+          "picture": "",
+          "report": true
         },
         {
           "firstName": "Callie",
@@ -79,7 +84,8 @@
             "Biology (BS)",
             "Japanese (BA)"
           ],
-          "picture": ""
+          "picture": "",
+          "report": false
         },
         {
           "firstName": "Hepsy",
@@ -93,7 +99,8 @@
             "Japanese (BA)",
             "Dance (BA)"
           ],
-          "picture": ""
+          "picture": "",
+          "report": false
         },
 
         {
@@ -108,7 +115,8 @@
             "Japanese (BA)",
             "Second Language Studies (BA)"
           ],
-          "picture": "/images/camden.jpg"
+          "picture": "/images/camden.jpg",
+          "report": false
         },
 
         {
@@ -122,7 +130,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/kenneth.png"
+          "picture": "/images/kenneth.png",
+          "report": false
         },
 
         {
@@ -136,7 +145,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/kayla.jpg"
+          "picture": "/images/kayla.jpg",
+          "report": false
         },
 
         {
@@ -150,7 +160,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/jennifer.jpg"
+          "picture": "/images/jennifer.jpg",
+          "report": false
         },
 
         {
@@ -164,7 +175,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/joslyn.jpg"
+          "picture": "/images/joslyn.jpg",
+          "report": true
         },
 
         {
@@ -178,7 +190,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/emily.jpg"
+          "picture": "/images/emily.jpg",
+          "report": false
         },
 
         {
@@ -192,7 +205,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/jaimie.jpg"
+          "picture": "/images/jaimie.jpg",
+          "report": false
         },
 
         {
@@ -206,7 +220,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/mark.jpg"
+          "picture": "/images/mark.jpg",
+          "report": false
         },
 
         {
@@ -220,7 +235,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/kevin.jpg"
+          "picture": "/images/kevin.jpg",
+          "report": false
         },
 
         {
@@ -234,7 +250,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/josh.jpg"
+          "picture": "/images/josh.jpg",
+          "report": false
         },
 
         {
@@ -248,7 +265,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/kyaw.jpg"
+          "picture": "/images/kyaw.jpg",
+          "report": false
         },
 
         {
@@ -262,7 +280,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/sawinna.jpg"
+          "picture": "/images/sawinna.jpg",
+          "report": false
         },
 
         {
@@ -276,7 +295,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/emilyk.jpg"
+          "picture": "/images/emilyk.jpg",
+          "report": false
         },
 
         {
@@ -290,7 +310,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/kevinl.jpg"
+          "picture": "/images/kevinl.jpg",
+          "report": false
         },
 
         {
@@ -304,7 +325,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/joseph.jpg"
+          "picture": "/images/joseph.jpg",
+          "report": false
         },
 
         {
@@ -318,7 +340,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/rebecca.jpg"
+          "picture": "/images/rebecca.jpg",
+          "report": false
         },
 
         {
@@ -332,7 +355,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/katherine.jpg"
+          "picture": "/images/katherine.jpg",
+          "report": false
         },
 
         {
@@ -346,7 +370,8 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "/images/dylan.jpg"
+          "picture": "/images/dylan.jpg",
+          "report": false
         },
 
         {
@@ -360,7 +385,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/kevinw.jpg"
+          "picture": "/images/kevinw.jpg",
+          "report": false
         },
 
         {
@@ -374,7 +400,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/alex.jpg"
+          "picture": "/images/alex.jpg",
+          "report": false
         },
 
         {
@@ -388,7 +415,8 @@
           "interests": [
             "Electrical Engineering (BS)"
           ],
-          "picture": "/images/tyler.jpg"
+          "picture": "/images/tyler.jpg",
+          "report": false
         }
 
       ]
