@@ -68,13 +68,6 @@ userRoutes.route('/profile', {
   },
 });
 
-export const adminPageRouteName = 'Admin_Page';
-userRoutes.route('/admin', {
-  name: adminPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
-  },
-});
 export const searchPageRouteName = 'Search_Page';
 userRoutes.route('/search', {
   name: searchPageRouteName,
@@ -99,6 +92,13 @@ export const adminRoutes = userRoutes.group({
   name: 'adminRoutes',
 });
 
+export const adminPageRouteName = 'Admin_Page';
+adminRoutes.route('/admin-board', {
+  name: adminPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
+  },
+});
 
 export const deleteProfile = 'Delete_Profile_Page';
 adminRoutes.route('/delete-profile/:_id', {
