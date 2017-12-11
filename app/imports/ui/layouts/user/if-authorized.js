@@ -26,11 +26,14 @@ Template.If_Authorized.helpers({
     // Check that the current user is accessing a page in their area.
     const routeUserName = FlowRouter.getParam('username');
     const loggedInUserName = Meteor.user().profile.name;
+    const adminPage = 'Admin_Page';
+    const routePage = FlowRouter.getRouteName();
 
     const jessie = 'jlblanke';
     const andrew = 'aobatake';
     const kian = 'kiank';
     const beejay = 'beejayi';
+    const pj = 'johnson';
     if (loggedInUserName === jessie) {
       return true;
     }
@@ -42,6 +45,11 @@ Template.If_Authorized.helpers({
     }
     if (loggedInUserName === beejay) {
       return true;
+    }
+    if (loggedInUserName === pj) {
+      return true;
+    } else if (adminPage === routePage) {
+      return false;
     } else if (routeUserName === loggedInUserName) {
       return true;
     } else if (routeUserName === 'undefined') {
