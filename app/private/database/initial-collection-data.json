@@ -69,7 +69,7 @@
           "interests": [
             "Computer Engineering (BS)"
           ],
-          "picture": "",
+          "picture": "/images/jessie.jpeg",
           "report": true
         },
         {
@@ -206,7 +206,7 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/jaimie.jpg",
-          "report": false
+          "report": true
         },
 
         {
@@ -236,7 +236,7 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kevin.jpg",
-          "report": false
+          "report": true
         },
 
         {
