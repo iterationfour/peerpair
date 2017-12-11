@@ -95,6 +95,6 @@ Template.Edit_Profile_Page.events({
     Profiles.removeIt(FlowRouter.getParam('username'));
     // Call the FlowRouter.go function to take the user back to the Home page.
     const currentAdmin = Meteor.user().profile.name;
-    FlowRouter.go(`/${currentAdmin}/admin`);
+    FlowRouter.go(`/${currentAdmin}/admin/admin-board`);
   },
 });
