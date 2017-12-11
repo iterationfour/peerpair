@@ -34,29 +34,20 @@ Template.If_Authorized.helpers({
     const kian = 'kiank';
     const beejay = 'beejayi';
     const pj = 'johnson';
-    if (loggedInUserName === jessie) {
-      return true;
-    }
-    if (loggedInUserName === andrew) {
-      return true;
-    }
-    if (loggedInUserName === kian) {
-      return true;
-    }
-    if (loggedInUserName === beejay) {
-      return true;
-    }
-    if (loggedInUserName === pj) {
+
+    const Admins = [jessie, andrew, kian, beejay, pj];
+
+    if (_.contains(Admins, loggedInUserName)) {
+      console.log ('found loggedInUserName');
       return true;
     } else if (adminPage === routePage) {
       return false;
     } else if (routeUserName === loggedInUserName) {
       return true;
-    } else if (routeUserName === 'undefined') {
+    } else if (routeUserName === undefined) {
       return true;
     }
     return false;
   },
-
 
 });
