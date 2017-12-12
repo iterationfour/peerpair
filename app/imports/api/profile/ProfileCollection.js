@@ -30,6 +30,7 @@ class ProfileCollection extends BaseCollection {
       github: { type: SimpleSchema.RegEx.Url, optional: true },
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
       instagram: { type: SimpleSchema.RegEx.Url, optional: true },
+      report: { type: Boolean },
     }, { tracker: Tracker }));
   }
 
@@ -55,10 +56,11 @@ class ProfileCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', github = '',
-      facebook = '', instagram = '' }) {
+      facebook = '', instagram = '', report = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String };
-    check({ firstName, lastName, username, bio, picture }, checkPattern);
+    const checkPattern = { firstName: String, lastName: String, username: String,
+      bio: String, picture: String, report: Boolean };
+    check({ firstName, lastName, username, bio, picture, report }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -73,7 +75,7 @@ class ProfileCollection extends BaseCollection {
     }
 
     return this._collection.insert({ firstName, lastName, username, bio, interests, picture, github,
-      facebook, instagram });
+      facebook, instagram, report });
   }
 
   /**
@@ -92,10 +94,12 @@ class ProfileCollection extends BaseCollection {
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram };
+    const report = doc.report;
+    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report };
   }
-}
 
+
+}
 /**
  * Provides the singleton instance of this class to all other entities.
  */

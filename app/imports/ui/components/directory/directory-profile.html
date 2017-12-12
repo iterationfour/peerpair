@@ -41,8 +41,18 @@
             <i class ="ui big user icon"></i>
             <div class = "ui menu">
               <div class = "item">Add user to favorites</div> <!-- Change this later to differentiate between adding and removing-->
+              {{#if profile.report }}
+              <div class = "item">
+                <i class="red warning circle icon"></i>
+                - reported
+              </div>
+              {{else}}
               <div class = "item">Report user</div>
+<<<<<<< HEAD
               <div class = "item">Give User +Rep</div>
+=======
+              {{/if}}
+>>>>>>> master
             </div>
           </div>
         </div>

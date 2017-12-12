@@ -4,6 +4,8 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Meteor } from 'meteor/meteor';
+
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -46,18 +48,22 @@ Template.Edit_Profile_Page.events({
     event.preventDefault();
     const firstName = event.target.First.value;
     const lastName = event.target.Last.value;
-    //const title = event.target.Title.value;
+    // const title = event.target.Title.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
     const picture = event.target['Profile Picture'].value;
     const github = event.target.Github.value;
     const facebook = event.target.Facebook.value;
     const instagram = event.target.Instagram.value;
-    const bio = event.target["About Me"].value;
+    const bio = event.target['About Me'].value;
     const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
     const interests = _.map(selectedInterests, (option) => option.value);
+    // the following 3 fields are for pulling in the report status
+    const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
+    const temp = _.values(Profiles.dumpOne(docID));
+    const report = temp[9];
 
-    const updatedProfileData = { firstName, lastName, /*title,*/ picture, github, facebook, instagram, bio, interests,
-      username };
+    const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
+      username, report };
 
     // Clear out any old validation errors.
     instance.context.reset();
@@ -75,6 +81,22 @@ Template.Edit_Profile_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
+  },
+
+  'click .delete': function (event) {
+    // Disable the default event behavior. //CHECK
+    event.preventDefault();
+    // Call the ‘remove’ function associated with the Contacts collection
+    // passing it the docID of the Contact to be removed.
+    // const contactData = Contacts.findOne(FlowRouter.getParam('_id'));
+    // console.log(Profiles.dumpOne(FlowRouter.getParam('_id')));
+    // console.log(FlowRouter.getParam('username'));
+    // console.log(FlowRouter.getRouteName());
+    // console.log(Meteor.user().profile.name);
+    Profiles.removeIt(FlowRouter.getParam('username'));
+    // Call the FlowRouter.go function to take the user back to the Home page.
+    const currentAdmin = Meteor.user().profile.name;
+    FlowRouter.go(`/${currentAdmin}/admin/admin-board`);
   },
 });
 

@@ -3,6 +3,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 const selectedInterestsKey = 'selectedInterests';
 
@@ -34,13 +35,9 @@ Template.Admin_Page.helpers({
           };
         });
   },
-});
 
-Template.Admin_Page.events({
-  'submit .filter-data-form'(event, instance) {
-    event.preventDefault();
-    const selectedOptions = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
-    instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
+  routeUserName() {
+    return FlowRouter.getParam('username');
   },
 });
 

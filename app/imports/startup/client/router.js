@@ -68,13 +68,6 @@ userRoutes.route('/profile', {
   },
 });
 
-export const adminPageRouteName = 'Admin_Page';
-userRoutes.route('/admin', {
-  name: adminPageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
-  },
-});
 export const searchPageRouteName = 'Search_Page';
 userRoutes.route('/search', {
   name: searchPageRouteName,
@@ -89,3 +82,28 @@ FlowRouter.notFound = {
     BlazeLayout.render('Page_Not_Found');
   },
 };
+
+
+/*                        ADMIN ROUTES                       */
+
+// I know we should be doing something like this but I couldn't figure it out....
+export const adminRoutes = userRoutes.group({
+  prefix: '/admin',
+  name: 'adminRoutes',
+});
+
+export const adminPageRouteName = 'Admin_Page';
+adminRoutes.route('/admin-board', {
+  name: adminPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: adminPageRouteName });
+  },
+});
+
+export const deleteProfile = 'Delete_Profile_Page';
+adminRoutes.route('/delete-profile/:_id', {
+  name: deleteProfile,
+  action() {
+    BlazeLayout.render('User_Layout', { main: deleteProfile });
+  },
+});
