@@ -31,6 +31,8 @@ class ProfileCollection extends BaseCollection {
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
       instagram: { type: SimpleSchema.RegEx.Url, optional: true },
       report: { type: Boolean },
+      reputation: { type: Array, optional: true },
+      'reputation.$': { type: String },
     }, { tracker: Tracker }));
   }
 
@@ -56,7 +58,7 @@ class ProfileCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', github = '',
-      facebook = '', instagram = '', report = '' }) {
+      facebook = '', instagram = '', report = '', reputation = [] }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String,
       bio: String, picture: String, report: Boolean };
@@ -74,8 +76,13 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
 
+    //Throw an error if there are duplicates in the passed reputation names.
+    if (reputation.length !== _.uniq(reputation).length) {
+      throw new Meteor.Error(`${reputation} contains duplicates`);
+    }
+
     return this._collection.insert({ firstName, lastName, username, bio, interests, picture, github,
-      facebook, instagram, report });
+      facebook, instagram, report, reputation });
   }
 
   /**
@@ -95,7 +102,8 @@ class ProfileCollection extends BaseCollection {
     const facebook = doc.facebook;
     const instagram = doc.instagram;
     const report = doc.report;
-    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report };
+    const reputation = doc.reputation;
+    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report, reputation };
   }
 
 
