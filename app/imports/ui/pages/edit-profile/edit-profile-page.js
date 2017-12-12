@@ -61,9 +61,11 @@ Template.Edit_Profile_Page.events({
     const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
     const temp = _.values(Profiles.dumpOne(docID));
     const report = temp[9];
+    //Piggyback off of Jessie's method to preserve reputation field in addition to the report field
+    const reputation = temp[10];
 
     const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
-      username, report };
+      username, report, reputation };
 
     // Clear out any old validation errors.
     instance.context.reset();
