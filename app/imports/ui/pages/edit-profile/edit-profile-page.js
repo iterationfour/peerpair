@@ -57,9 +57,13 @@ Template.Edit_Profile_Page.events({
     const bio = event.target['About Me'].value;
     const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
     const interests = _.map(selectedInterests, (option) => option.value);
+    // the following 3 fields are for pulling in the report status
+    const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
+    const temp = _.values(Profiles.dumpOne(docID));
+    const report = temp[9];
 
     const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
-      username };
+      username, report };
 
     // Clear out any old validation errors.
     instance.context.reset();
@@ -78,10 +82,7 @@ Template.Edit_Profile_Page.events({
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
-});
 
-
-Template.Edit_Profile_Page.events({
   'click .delete': function (event) {
     // Disable the default event behavior. //CHECK
     event.preventDefault();
@@ -98,3 +99,4 @@ Template.Edit_Profile_Page.events({
     FlowRouter.go(`/${currentAdmin}/admin/admin-board`);
   },
 });
+
