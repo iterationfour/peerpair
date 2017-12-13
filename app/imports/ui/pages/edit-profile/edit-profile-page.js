@@ -23,6 +23,33 @@ Template.Edit_Profile_Page.onCreated(function onCreated() {
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
   this.context = Profiles.getSchema().namedContext('Edit_Profile_Page');
+
+  if (!Profiles.isDefined(FlowRouter.getParam('username'))) {
+    // console.log('doc not found - set all null');
+    const firstName = '';
+    const lastName = '';
+    const username = FlowRouter.getParam('username');
+    const bio = '';
+    const interests = [];
+    const picture = '';
+    const github = '';
+    const facebook = '';
+    const instagram = '';
+    const report = [];
+    const reputation = [];
+    const favorites = [];
+
+    const updatedProfileData = {
+      firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
+      username, report, reputation, favorites
+    };
+    // instance.context.reset();
+    // Invoke clean so that updatedProfileData reflects what will be inserted.
+    const cleanData = Profiles.getSchema().clean(updatedProfileData);
+    // Determine validity.
+    // instance.context.validate(cleanData);
+    const id = Profiles.define(cleanData);
+  }
 });
 
 Template.Edit_Profile_Page.helpers({
@@ -61,34 +88,14 @@ Template.Edit_Profile_Page.events({
     const facebook = event.target.Facebook.value;
     const instagram = event.target.Instagram.value;
     const bio = event.target['About Me'].value;
-
-    var interests;
-    if (!event.target.Major.selectedOptions) {
-      interests = ["Accounting (BBA)"];
-    } else {
-      console.log(event.target.Major.selectedOptions);
-      const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
-      console.log(selectedInterests);
-      interests = _.map(selectedInterests, (option) => option.value);
-      console.log(interests);
-    }
+    const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
+    const interests = _.map(selectedInterests, (option) => option.value);
     // Preserve report field
-    let report,
-      reputation,
-      favorites;
-    if (Profiles.isDefined(FlowRouter.getParam('username'))) {
-      console.log('doc found - set all to prev value');
-      report = Profiles.findDoc(FlowRouter.getParam('username')).report;
-      // Preserve reputation field
-      reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
-      // Preserve favorites field
-      favorites = Profiles.findDoc(FlowRouter.getParam('username')).favorites;
-    } else {
-      console.log('doc not found - set all null');
-      report = [];
-      reputation = [];
-      favorites = [];
-    }
+    const report = Profiles.findDoc(FlowRouter.getParam('username')).report;
+    // Preserve reputation field
+    const reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
+    // Preserve favorites field
+    const favorites = Profiles.findDoc(FlowRouter.getParam('username')).favorites;
 
 
     const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
@@ -102,15 +109,10 @@ Template.Edit_Profile_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      if (Profiles.isDefined(FlowRouter.getParam('username'))) {
-        const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
-        const id = Profiles.update(docID, { $set: cleanData });
-        instance.messageFlags.set(displaySuccessMessage, id);
-        instance.messageFlags.set(displayErrorMessages, false);
-      } else {
-        console.log('new profile');
-        Profiles.define(cleanData);
-      }
+      const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
+      const id = Profiles.update(docID, { $set: cleanData });
+      instance.messageFlags.set(displaySuccessMessage, id);
+      instance.messageFlags.set(displayErrorMessages, false);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
