@@ -18,10 +18,14 @@
           <td>{{profile.firstName}}</td>
           <td>{{profile.lastName}}</td>
           {{#if profile.report}}
+
           <td>
-            <i class="red warning circle icon"></i>
-            - reported
+          {{#each item in profile.report}}
+            {{findUsername(item.reporter)}} - {{item.reason}}
+            <br>
+            {{/each}}
           </td>
+
           {{else}}
           <td>no reports</td>
           {{/if}}
