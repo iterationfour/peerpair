@@ -33,9 +33,9 @@ class ProfileCollection extends BaseCollection {
       report: { type: Array, optional : true },
       'report.$': {type: Object, blackbox: true },
       reputation: { type: Array, optional: true },
-      'reputation.$': { type: String },
+      'reputation.$': { type: String, blackbox: true },
       favorites: { type: Array, optional: true },
-      'favorites.$': { type: String },
+      'favorites.$': { type: String, blackbox: true },
     }, { tracker: Tracker }));
   }
 
