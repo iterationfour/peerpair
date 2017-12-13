@@ -39,5 +39,10 @@ Template.Admin_Page.helpers({
   routeUserName() {
     return FlowRouter.getParam('username');
   },
+
+  findUsername(ID){
+    return Profiles.findDoc(ID).firstName + ' ' + Profiles.findDoc(ID).lastName;
+  },
+
 });
 
