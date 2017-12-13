@@ -47,4 +47,48 @@ Template.Directory_Profile.events({
      }
    }
   },
+
+  'click .report': function (event){
+    event.preventDefault();
+    //confirm action
+    var retVal = prompt("Are you sure you want to report this user?", "Please enter your reason for reporting this user.");;
+    if(retVal){
+      //find both users IDs
+      const reporterID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
+      const reporteeID = Profiles.findDoc(this.profile.username)._id;
+
+      //console.log(repperID);
+      //console.log(reppeeID);
+
+      if(reporterID === reporteeID){
+        //Don't let users give report themselves
+        alert("You can't report yourself.");
+      }
+
+      else if(_.contains(Profiles.findDoc(reporteeID).report, reporterID)){
+        //if this person has already reported this person, abort
+        alert("You have already reported this person.");
+      }
+
+      //otherwise, give user +rep
+      else{
+        const newReport = Profiles.findDoc(reporteeID).report;
+        newReport.push( {reporter: reporterID.toString(), reason: retVal} );
+        console.log(newReport);
+        Profiles.update(
+            { _id: reporteeID },
+            { $set:
+                  {
+                    report: newReport
+                  }
+            }
+        );
+        //const updated = Profiles.findDoc(reppeeID).reputation;
+        //console.log(updated);
+        alert("Success! The admin will be notified of this report.")
+
+      }
+    }
+  },
+
 });
