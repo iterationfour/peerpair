@@ -57,10 +57,7 @@ Template.Edit_Profile_Page.events({
     const bio = event.target['About Me'].value;
     const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
     const interests = _.map(selectedInterests, (option) => option.value);
-    // the following 3 fields are for pulling in the report status
-    //const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
-    //const temp = _.values(Profiles.dumpOne(docID));
-    //const report = temp[9];
+    //Preserve report field
     const report = Profiles.findDoc(FlowRouter.getParam('username')).report;
     //Preserve reputation field
     const reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
