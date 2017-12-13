@@ -61,9 +61,11 @@ Template.Edit_Profile_Page.events({
     const report = Profiles.findDoc(FlowRouter.getParam('username')).report;
     //Preserve reputation field
     const reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
+    //Preserve favorites field
+    const favorites = Profiles.findDoc(FlowRouter.getParam('username')).favorites;
 
     const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
-      username, report, reputation };
+      username, report, reputation, favorites };
 
     // Clear out any old validation errors.
     instance.context.reset();
