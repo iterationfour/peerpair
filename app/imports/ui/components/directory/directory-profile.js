@@ -30,7 +30,10 @@ Template.Directory_Profile.events({
 
      //otherwise, give user +rep
      else{
-       const newrep = Profiles.findDoc(reppeeID).reputation;
+       var newrep = Profiles.findDoc(reppeeID).reputation;
+       if (newrep == null || newrep.length < 1){
+         newrep = [repperID.toString()];
+       }
        newrep.push(repperID.toString());
        //console.log(newrep);
        Profiles.update(
@@ -65,15 +68,21 @@ Template.Directory_Profile.events({
         alert("You can't report yourself.");
       }
 
-      else if(_.contains(Profiles.findDoc(reporteeID).report, reporterID)){
+      else if(_.some(Profiles.findDoc(reporteeID).report, _.has({ _id: reporterID }))) {
         //if this person has already reported this person, abort
         alert("You have already reported this person.");
       }
 
       //otherwise, give user +rep
       else{
-        const newReport = Profiles.findDoc(reporteeID).report;
-        newReport.push( {reporter: reporterID.toString(), reason: retVal} );
+        var newReport = Profiles.findDoc(reporteeID).report;
+        if(newReport == null || newReport.length < 1) {
+          newReport = [{ reporter: reporterID.toString(), reason: retVal }];
+        }
+        else {
+          newReport.push({ reporter: reporterID.toString(), reason: retVal });
+        }
+
         console.log(newReport);
         Profiles.update(
             { _id: reporteeID },

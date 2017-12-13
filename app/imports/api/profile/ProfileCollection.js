@@ -31,7 +31,7 @@ class ProfileCollection extends BaseCollection {
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
       instagram: { type: SimpleSchema.RegEx.Url, optional: true },
       report: { type: Array, optional : true },
-      'report.$': {type: {String, String} },
+      'report.$': {type: Object, blackbox: true },
       reputation: { type: Array, optional: true },
       'reputation.$': { type: String },
       favorites: { type: Array, optional: true },
