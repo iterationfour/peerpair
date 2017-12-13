@@ -9,7 +9,7 @@ Template.Directory_Profile.events({
   'click .rep': function (event){
    event.preventDefault();
    //confirm action
-   var retVal = confirm("Give this user +rep?");
+   var retVal = confirm("Are you sure you want to give this user +rep? You cannot undo this process.");
    if(retVal){
      //find both users IDs
      const repperID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
