@@ -35,7 +35,7 @@ Template.If_Authorized.helpers({
     const beejay = 'beejayi';
     const pj = 'johnson';
 
-    const Admins = [jessie, andrew, kian, beejay, pj];
+    const Admins = [jessie, kian, beejay, pj];
 
     if (_.contains(Admins, loggedInUserName)) {
       return true;
