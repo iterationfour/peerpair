@@ -15,8 +15,8 @@ Template.Directory_Profile.events({
      const repperID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
      const reppeeID = Profiles.findDoc(this.profile.username)._id;
 
-     console.log(repperID);
-     console.log(reppeeID);
+     //console.log(repperID);
+     //console.log(reppeeID);
 
      if(repperID === reppeeID){
        //Don't let users give themselves +rep
@@ -32,7 +32,7 @@ Template.Directory_Profile.events({
      else{
        const newrep = Profiles.findDoc(reppeeID).reputation;
        newrep.push(repperID.toString());
-       console.log(newrep);
+       //console.log(newrep);
        Profiles.update(
            { _id: reppeeID },
            { $set:
@@ -42,7 +42,7 @@ Template.Directory_Profile.events({
            }
        );
        const updated = Profiles.findDoc(reppeeID).reputation;
-       console.log(updated);
+       //console.log(updated);
        alert("Success! Thank you for rating this user.")
      }
    }
