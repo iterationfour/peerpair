@@ -22,7 +22,7 @@ if (Meteor.isServer) {
     const facebook = 'http://github.com/philipjohnson';
     const instagram = 'http://github.com/philipjohnson';
     const report = false;
-    const reputation = ["kiank"];
+    const reputation = [];
     const defineObject = { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram, report, reputation  };
 
     before(function setup() {
