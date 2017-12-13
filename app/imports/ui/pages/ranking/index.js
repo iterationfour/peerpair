@@ -1,2 +1,2 @@
-import "./ranking-page.html"
-import "./ranking-page.js"
+import './ranking-page.html';
+import './ranking-page.js';
