@@ -41,3 +41,18 @@ Template.Admin_Page.helpers({
   },
 });
 
+/*        {
+          "firstName": "Andrew",
+          "lastName": "Obatake",
+          "username": "aobatake",
+          "github": "aobatake",
+          "bio": "I am an student studying Computer Engineering at the University of Hawaii.",
+          "interests": [
+            "Computer Engineering (BS)"
+          ],
+          "picture": "",
+          "report": [],
+          "reputation": [],
+          "favorites": []
+        },
+*/
