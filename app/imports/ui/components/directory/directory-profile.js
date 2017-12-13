@@ -41,7 +41,7 @@ Template.Directory_Profile.events({
                  }
            }
        );
-       const updated = Profiles.findDoc(reppeeID).reputation;
+       //const updated = Profiles.findDoc(reppeeID).reputation;
        //console.log(updated);
        alert("Success! Thank you for rating this user.")
      }
