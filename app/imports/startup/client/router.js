@@ -74,14 +74,16 @@ userRoutes.route('/search', {
   action() {
     BlazeLayout.render('User_Layout', { main: searchPageRouteName });
   },
+});
 
-  /*export const searchPageRouteName = 'Ranking_Page';
+export const rankingPageRouteName = 'Ranking_Page';
 userRoutes.route('/rankings', {
   name: rankingPageRouteName,
   action() {
     BlazeLayout.render('User_Layout', { main: rankingPageRouteName });
-  },*/
+  },
 });
+
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
