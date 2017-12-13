@@ -13,8 +13,9 @@ const displayErrorMessages = 'displayErrorMessages';
 
 Template.Edit_Profile_Page.onCreated(function onCreated() {
   // console.log(Meteor.user().profile.name);
-  // console.log(Profiles.dumpOne(FlowRouter.getParam('_id')));
+  // console.log(Profiles.dumpOne(FlowRouter.getParam('username')));
   // console.log(FlowRouter.getParam('username'));
+  // console.log(FlowRouter.getParam('_id'));
   // console.log(FlowRouter.getRouteName());
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
@@ -60,14 +61,35 @@ Template.Edit_Profile_Page.events({
     const facebook = event.target.Facebook.value;
     const instagram = event.target.Instagram.value;
     const bio = event.target['About Me'].value;
-    const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
-    const interests = _.map(selectedInterests, (option) => option.value);
-    //Preserve report field
-    const report = Profiles.findDoc(FlowRouter.getParam('username')).report;
-    //Preserve reputation field
-    const reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
-    //Preserve favorites field
-    const favorites = Profiles.findDoc(FlowRouter.getParam('username')).favorites;
+
+    var interests;
+    if (!event.target.Major.selectedOptions) {
+      interests = ["Accounting (BBA)"];
+    } else {
+      console.log(event.target.Major.selectedOptions);
+      const selectedInterests = _.filter(event.target.Major.selectedOptions, (option) => option.selected);
+      console.log(selectedInterests);
+      interests = _.map(selectedInterests, (option) => option.value);
+      console.log(interests);
+    }
+    // Preserve report field
+    let report,
+      reputation,
+      favorites;
+    if (Profiles.isDefined(FlowRouter.getParam('username'))) {
+      console.log('doc found - set all to prev value');
+      report = Profiles.findDoc(FlowRouter.getParam('username')).report;
+      // Preserve reputation field
+      reputation = Profiles.findDoc(FlowRouter.getParam('username')).reputation;
+      // Preserve favorites field
+      favorites = Profiles.findDoc(FlowRouter.getParam('username')).favorites;
+    } else {
+      console.log('doc not found - set all null');
+      report = [];
+      reputation = [];
+      favorites = [];
+    }
+
 
     const updatedProfileData = { firstName, lastName, /* title, */ picture, github, facebook, instagram, bio, interests,
       username, report, reputation, favorites };
@@ -80,22 +102,19 @@ Template.Edit_Profile_Page.events({
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      // const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
-      const id = Profiles.update(docID, { $set: cleanData });
-      instance.messageFlags.set(displaySuccessMessage, id);
-      instance.messageFlags.set(displayErrorMessages, false);
+      if (Profiles.isDefined(FlowRouter.getParam('username'))) {
+        const docID = Profiles.findDoc(FlowRouter.getParam('username'))._id;
+        const id = Profiles.update(docID, { $set: cleanData });
+        instance.messageFlags.set(displaySuccessMessage, id);
+        instance.messageFlags.set(displayErrorMessages, false);
+      } else {
+        console.log('new profile');
+        Profiles.define(cleanData);
+      }
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-    // for redirecting, check if
-    const jessie = 'jlblanke';
-    const andrew = 'aobatake';
-    const kian = 'kiank';
-    const beejay = 'beejayi';
-    const pj = 'johnson';
-    const Admins = [jessie, andrew, kian, beejay, pj];
-    const currentLoggedIn = Meteor.user().profile.name;
   },
 
   'click .delete': function (event) {
@@ -103,12 +122,31 @@ Template.Edit_Profile_Page.events({
     event.preventDefault();
     const username = FlowRouter.getParam('username');
     const id = FlowRouter.getParam('_id');
+    console.log(`username = ${username}`);
+    console.log(`id = ${id}`);
     // Call the ‘remove’ function associated with the Contacts collection
     // passing it the docID of the Contact to be removed.
     // const contactData = Contacts.findOne(FlowRouter.getParam('_id'));
-    Profiles.removeIt(username);
-    // Call the FlowRouter.go function to take the user back to the Admin page.
 
+    // Call the FlowRouter.go function to take the user back to the Admin page.
+    // for redirecting, check if
+    const jessie = 'jlblanke';
+    const andrew = 'aobatake';
+    const kian = 'kiank';
+    const beejay = 'beejayi';
+    const pj = 'johnson';
+    const Admins = [jessie, kian, beejay, pj];
+    const currentLoggedIn = Meteor.user().profile.name;
+    console.log(`currentCAS = ${currentLoggedIn}`);
+    if (username === Meteor.user().profile.name) {
+      console.log(`deleting self: ${username}`);
+      Meteor.logout();
+      Profiles.removeIt(username);
+    } else {
+      console.log(`admin deleting ${username}`);
+      Profiles.removeIt(username);
+      FlowRouter.go(`/${currentLoggedIn}/admin/admin-board`);
+    }
   },
 });
 
