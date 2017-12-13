@@ -22,9 +22,9 @@
           <td>
           {{#each item in profile.report}}
             {{findUsername(item.reporter)}} - {{item.reason}}
+            <br>
             {{/each}}
           </td>
-
 
           {{else}}
           <td>no reports</td>
