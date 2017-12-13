@@ -12,7 +12,7 @@
         {{ profile.firstName }} {{ profile.lastName }}
       </div>
       <div class="meta">
-        {{ profile.title}}
+        <span>Reputation: +{{ profile.reputation.length}}</span>
       </div>
       <div class="description">
         {{ profile.bio }}
@@ -49,6 +49,7 @@
               {{else}}
               <div class = "item">Report user</div>
               {{/if}}
+              <div class = "rep item" type = "rep">Give User +Rep</div>
             </div>
           </div>
         </div>

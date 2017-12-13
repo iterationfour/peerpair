@@ -21,7 +21,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/beejay.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
         {
           "firstName": "Kian",
@@ -35,7 +36,8 @@
             "Computer Science General (BS)"
           ],
           "picture": "/images/kian.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
         {
           "firstName": "Arisa",
@@ -46,7 +48,8 @@
             "English (BA)"
           ],
           "picture": "/images/arisa.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
         {
           "firstName": "Andrew",
@@ -58,7 +61,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "",
-          "report": false
+          "report": false,
+          "reputation": []
         },
         {
           "firstName": "Jessie",
@@ -70,7 +74,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/jessie.jpeg",
-          "report": true
+          "report": true,
+          "reputation": []
         },
         {
           "firstName": "Callie",
@@ -85,7 +90,8 @@
             "Japanese (BA)"
           ],
           "picture": "",
-          "report": false
+          "report": false,
+          "reputation": []
         },
         {
           "firstName": "Hepsy",
@@ -100,7 +106,8 @@
             "Dance (BA)"
           ],
           "picture": "",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -116,7 +123,8 @@
             "Second Language Studies (BA)"
           ],
           "picture": "/images/camden.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -131,7 +139,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kenneth.png",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -146,7 +155,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kayla.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -161,7 +171,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/jennifer.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -176,7 +187,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/joslyn.jpg",
-          "report": true
+          "report": true,
+          "reputation": []
         },
 
         {
@@ -191,7 +203,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/emily.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -206,7 +219,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/jaimie.jpg",
-          "report": true
+          "report": true,
+          "reputation": []
         },
 
         {
@@ -221,7 +235,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/mark.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -236,7 +251,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kevin.jpg",
-          "report": true
+          "report": true,
+          "reputation": []
         },
 
         {
@@ -251,7 +267,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/josh.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -266,7 +283,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kyaw.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -281,7 +299,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/sawinna.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -296,7 +315,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/emilyk.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -311,7 +331,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kevinl.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -326,7 +347,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/joseph.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -341,7 +363,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/rebecca.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -356,7 +379,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/katherine.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -371,7 +395,8 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/dylan.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -386,7 +411,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kevinw.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -401,7 +427,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/alex.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         },
 
         {
@@ -416,7 +443,8 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/tyler.jpg",
-          "report": false
+          "report": false,
+          "reputation": []
         }
 
       ]
