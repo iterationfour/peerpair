@@ -21,6 +21,7 @@
 
           <td>
           {{#each item in profile.report}}
+            <i class="red warning circle icon"></i>
             {{findUsername(item.reporter)}} - {{item.reason}}
             <br>
             {{/each}}
