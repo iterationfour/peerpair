@@ -15,21 +15,12 @@
       <tbody>
       {{#each profile in profiles}}
       <tr>
+
+        <td>Number here</td>
         <td>{{profile.firstName}}</td>
         <td>{{profile.lastName}}</td>
-        {{#if profile.report}}
+        <td>{{profile.reputation.length}}</td>
 
-        <td>
-          {{#each item in profile.report}}
-          {{findUsername(item.reporter)}} - {{item.reason}}
-          <br>
-          {{/each}}
-        </td>
-
-        {{else}}
-        <td>no reports</td>
-        {{/if}}
-        <td><a href="{{pathFor 'Edit_Profile_Page' username=profile.username}}">Delete / Edit</a></td>
       </tr>
       {{/each}}
       </tbody>

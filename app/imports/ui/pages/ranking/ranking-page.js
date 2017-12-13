@@ -39,8 +39,4 @@ Template.Ranking_Page.helpers({
     return FlowRouter.getParam('username');
   },
 
-  findUsername(ID){
-    return Profiles.findDoc(ID).firstName + ' ' + Profiles.findDoc(ID).lastName;
-  },
-
 });
