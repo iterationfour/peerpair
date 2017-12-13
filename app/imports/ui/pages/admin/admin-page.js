@@ -22,8 +22,7 @@ Template.Admin_Page.helpers({
     }
     // Find all profiles with the currently selected interests.
     const allProfiles = Profiles.findAll();
-    const selectedInterests = Template.instance().messageFlags.get(selectedInterestsKey);
-    return _.filter(allProfiles, profile => _.intersection(profile.interests, selectedInterests).length > 0);
+    return _.sortBy(allProfiles, 'lastName');
   },
 
   interests() {
@@ -40,8 +39,8 @@ Template.Admin_Page.helpers({
     return FlowRouter.getParam('username');
   },
 
-  findUsername(ID){
-    return Profiles.findDoc(ID).firstName + ' ' + Profiles.findDoc(ID).lastName;
+  findUsername(ID) {
+    return `${Profiles.findDoc(ID).firstName} ${Profiles.findDoc(ID).lastName}`;
   },
 
 });
