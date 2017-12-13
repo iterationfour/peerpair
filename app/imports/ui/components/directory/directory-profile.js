@@ -67,7 +67,7 @@ Template.Directory_Profile.events({
       alert("You can't report yourself.");
     }
 
-    else if(_.some(Profiles.findDoc(reporteeID).report, _.has({ _id: reporterID }))) {
+    else if(_.some(Profiles.findDoc(reporteeID).report, function(item) {return _.contains(item, reporterID)} )) {
       //if this person has already reported this person, abort
       alert("You have already reported this person.");
     }
@@ -200,7 +200,7 @@ Template.Directory_Profile.events({
             }
         );
         //notify the user of the successful operation
-        alert("Success! You have now added this user to your favorites.")
+        alert("Success! You have removed this user from your favorites.")
       }
     }
   },
