@@ -5,9 +5,9 @@
     <table style="margin-top: 20px" class="ui celled table">
       <thead>
       <tr>
-        <th>Rank</th>
         <th>First</th>
         <th>Last</th>
+        <th>Major(s)</th>
         <th>Reputation Score</th>
       </tr>
       </thead>
@@ -16,10 +16,14 @@
       {{#each profile in profiles}}
       <tr>
 
-        <td>Number here</td>
         <td>{{profile.firstName}}</td>
         <td>{{profile.lastName}}</td>
-        <td>{{profile.reputation.length}}</td>
+        <td>
+          {{#each major in profile.interests}}
+          {{major}}
+          {{/each}}
+        </td>
+        <td>+{{profile.reputation.length}}</td>
 
       </tr>
       {{/each}}
