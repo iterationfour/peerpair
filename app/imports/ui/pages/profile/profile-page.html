@@ -7,7 +7,7 @@
           <div class="ui card">
             <div class="image">
               {{#if userProfile.picture}}
-                <img src="{{userProfile.picture}}">
+                <img  src="{{userProfile.picture}}">
               {{else}}
                 <img src="/images/placeholder.png">
               {{/if}}
@@ -71,7 +71,7 @@
           <h1 class="ui horizontal divider">
             FAVORITE STUDY BUDDIES
           </h1>
-          {{> Profile_Page_Directory profiles=profiles }}
+          {{> Profile_Page_Directory profiles=favorites }}
         </div>
       </div>
 
