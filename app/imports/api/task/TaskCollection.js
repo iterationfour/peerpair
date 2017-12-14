@@ -8,8 +8,8 @@ export const Tasks = new Mongo.Collection('Tasks');
 
 
 export const TasksSchema = new SimpleSchema({
-  wClass: {
-    label: 'wClass',
+  course: {
+    label: 'course',
     type: String,
     optional: false,
     max: 200,

@@ -56,12 +56,12 @@ Template.Profile_Page.events({
   'submit .task-data-form'(event, instance) {
     event.preventDefault();
 
-    const wClass = event.target.WClass.value;
+    const course = event.target.Course.value;
     const task = event.target.Task.value;
     const dueDate = event.target.Due_Date.value;
     const username = FlowRouter.getParam('username');
 
-    const newTaskData = { wClass, task, dueDate, username };
+    const newTaskData = { course, task, dueDate, username };
     // Clear out any old validation errors.
     // instance.context.reset();
     // Invoke clean so that newStudentData reflects what will be inserted.

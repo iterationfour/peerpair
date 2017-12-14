@@ -29,7 +29,7 @@
           <form class="ui form task-data-form">
             <div class="three fields">
               <div class="three wide field">
-                {{> Text_Form_Control label="WClass" value=id placeholder="ICS314" required=true errorMessage=(fieldError "class")}}
+                {{> Text_Form_Control label="Course" value=id placeholder="ICS314" required=true errorMessage=(fieldError "Course")}}
               </div>
               <div class="ten wide field">
                 {{> Text_Form_Control label="Task" placeholder="Final Project: Milestone 2" required=true errorMessage=(fieldError "Todo")}}
@@ -37,13 +37,13 @@
               <div class="three wide field">
                 {{> Text_Form_Control label="Due_Date" placeholder="12/13/17" required=true errorMessage=(fieldError "DueDate")}}
               </div>
-              <button class="ui primary button" type="submit">Submit</button>
+              <button class="ui black button" type="submit">Submit</button>
             </div>
           </form>
           <table style="margin-top: 20px" class="ui celled table">
             <thead>
             <tr>
-              <th>Class</th>
+              <th>Course</th>
               <th>Task</th>
               <th>Due Date</th>
               <th>Done</th>
@@ -54,7 +54,7 @@
             <tbody>
             {{#each todo in tasksList}}
             <tr>
-              <td>{{todo.wClass}}</td>
+              <td>{{todo.course}}</td>
               <td>{{todo.task}}</td>
               <td>{{todo.dueDate}}</td>
               <td><button id="{{todo._id}}" class="ui button delete">Delete</button></td>
