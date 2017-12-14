@@ -13,6 +13,7 @@ import '/imports/ui/pages/landing';
 import '/imports/ui/pages/edit-profile';
 import '/imports/ui/pages/profile';
 import '/imports/ui/pages/search';
+import '/imports/ui/pages/ranking';
 import '/imports/ui/stylesheets/style.css';
 import '/imports/api/base';
 import '/imports/api/profile';
