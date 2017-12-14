@@ -26,6 +26,12 @@ export const TasksSchema = new SimpleSchema({
     optional: false,
     max: 200,
   },
+  username: {
+    label: 'username',
+    type: String,
+    optional: false,
+    max: 200,
+  },
 });
 
 Tasks.attachSchema(TasksSchema);

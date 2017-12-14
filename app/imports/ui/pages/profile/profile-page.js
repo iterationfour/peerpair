@@ -19,8 +19,8 @@ Template.Profile_Page.onCreated(function onCreated() {
 
 Template.Profile_Page.helpers({
   tasksList() {
-    console.log(Tasks.find());
-    return Tasks.find();
+    //console.log(Tasks.find());
+    return Tasks.find({username:FlowRouter.getParam('username')});
   },
   profiles() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
@@ -54,8 +54,9 @@ Template.Profile_Page.events({
     const wClass = event.target.WClass.value;
     const task = event.target.Task.value;
     const dueDate = event.target.Due_Date.value;
+    const username = FlowRouter.getParam('username');
 
-    const newTaskData = { wClass, task, dueDate };
+    const newTaskData = { wClass, task, dueDate, username };
     // Clear out any old validation errors.
     // instance.context.reset();
     // Invoke clean so that newStudentData reflects what will be inserted.
