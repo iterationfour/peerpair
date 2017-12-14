@@ -21,10 +21,18 @@
 
         <td>
           {{#each item in profile.report}}
+<<<<<<< HEAD
           {{findUsername(item.reporter)}} - {{item.reason}}
           <br>
           {{/each}}
         </td>
+=======
+            <i class="red warning circle icon"></i>
+            {{findUsername(item.reporter)}} - {{item.reason}}
+            <br>
+            {{/each}}
+          </td>
+>>>>>>> master
 
         {{else}}
         <td>no reports</td>
