@@ -4,10 +4,7 @@
       <div class="ui container">
         <div class="item"><h1 class="white">UHStudyNet</h1></div>
         <div class="right aligned item">
-          <a href="https://uhstudynet.github.io" class="{{size}} ui inverted basic button">About</a>
-        </div>
-        <div class="item">
-          <a href="https://github.com/uhstudynet/uhstudynet" class="{{size}} ui inverted basic button">Github</a>
+          <button id="about-button"  class="{{size}} ui inverted basic button">About</button>
         </div>
       </div>
     </div>
@@ -20,4 +17,38 @@
       <div class="four wide column"></div>
     </div>
   </div>
+  <div class="ui small modal">
+    <i class="close icon"></i>
+    <h1 class="modal-header">UHStudyNet</h1>
+    <div class="content">
+      <h2 class="modal-subheader">About</h2>
+      <ul class="modal-content">
+        <li>
+          Many students study alone, and thus, spend more time than necessary on school work because they don’t take advantage of study groups. The wasted time decreases their stamina and potentially their grades.
+        </li>
+        <li>We wanted to create a solution that facilitates the communication and selective process needed for study groups to form, so that students can create networks faster and more effectively.
+        </li>
+      </ul>
+      <h2 class="modal-subheader">Vision</h2>
+      <ul class="modal-content">
+        <li>Encourage collaborative learning and peer networking</li>
+        <li>Facilitate communication for all stages of study group interaction</li>
+        <li>Build more effective groups by connecting students based on learning styles and preferences</li>
+      </ul>
+      <div class="modal-button">{{> Modal_Login}}</div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      var about_button = $("#about-button");
+      var login_button = $(".modal-button");
+      about_button.on("click", function(){
+        $('.ui.small.modal')
+            .modal('show');
+      });
+      login_button.on("click", function(){
+
+      });
+    });
+  </script>
 </template>
