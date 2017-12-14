@@ -26,10 +26,10 @@ Template.Directory_Profile.events({
     //otherwise, give user +rep
     else{
       //confirm action
-      var retVal = confirm("Are you sure you want to give this user +rep? You cannot undo this process.");
+      let retVal = confirm("Are you sure you want to give this user +rep? You cannot undo this process.");
       if(retVal) {
         //find the current reputation array
-        var newrep = Profiles.findDoc(reppeeID).reputation;
+        let newrep = Profiles.findDoc(reppeeID).reputation;
         //if it's empty, just makea new one
         if (newrep == null || newrep.length < 1) {
           newrep = [repperID.toString()];
@@ -76,10 +76,10 @@ Template.Directory_Profile.events({
     else{
       //confirm action
       if(confirm("Are you sure you want to report this user?")){
-        var retVal = prompt("Please enter your reason for reporting this user.", "");
+        let retVal = prompt("Please enter your reason for reporting this user.", "");
         if(retVal) {
           //find the old report array
-          var newReport = Profiles.findDoc(reporteeID).report;
+          let newReport = Profiles.findDoc(reporteeID).report;
           //if the array is empty, just make a new one
           if (newReport == null || newReport.length < 1) {
             newReport = [{ reporter: reporterID.toString(), reason: retVal }];
@@ -125,10 +125,10 @@ Template.Directory_Profile.events({
     //otherwise, favorite user
     else{
       //confirm action
-      var retVal = confirm("Are you sure you want to favorite this user?");
+      let retVal = confirm("Are you sure you want to favorite this user?");
       if(retVal){
         //find the current favorites array
-        var newFave = Profiles.findDoc(favoriterID).favorites;
+        let newFave = Profiles.findDoc(favoriterID).favorites;
         //if the array is empty, just make a new one
         if (newFave == null || newFave.length < 1){
           newFave = [favoriteeID.toString()];
@@ -176,17 +176,17 @@ Template.Directory_Profile.events({
     //otherwise, unfavorite user
     else{
       //confirm action
-      var retVal = confirm("Are you sure you want to remove this user from your favorites?");
+      let retVal = confirm("Are you sure you want to remove this user from your favorites?");
       if(retVal){
         //find current favorites array
-        var newFave = Profiles.findDoc(favoriterID).favorites;
+        let newFave = Profiles.findDoc(favoriterID).favorites;
         //if this is the only favorite in the array, just change the array to an empty array
-        if (newFave.length == 1){
+        if (newFave.length === 1){
           newFave = [];
         }
         //otherwise, find the index of the unwanted ID and splice it out
         else{
-          var index = newFave.indexOf(favoriteeID)
+          let index = newFave.indexOf(favoriteeID)
           newFave.splice(index, 1);
         }
 
@@ -204,5 +204,15 @@ Template.Directory_Profile.events({
       }
     }
   },
+
+});
+
+Template.Directory_Profile.helpers({
+
+
+  isFavorite(){
+    let curr = FlowRouter.getParam('username');
+    return _.contains(Profiles.findDoc(curr).favorites, this.profile._id);
+  }
 
 });
