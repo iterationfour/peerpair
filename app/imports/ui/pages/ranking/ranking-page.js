@@ -3,27 +3,27 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-import { FlowRouter } from 'meteor/kadira:flow-router';
 
 const selectedInterestsKey = 'selectedInterests';
 
-Template.Admin_Page.onCreated(function onCreated() {
+Template.Ranking_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedInterestsKey, undefined);
 });
 
-Template.Admin_Page.helpers({
+Template.Ranking_Page.helpers({
+
   profiles() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedInterestsKey)) {
       Template.instance().messageFlags.set(selectedInterestsKey, _.map(Interests.findAll(), interest => interest.name));
     }
-    // Find all profiles
+    // Find all profiles with the currently selected interests.
     const allProfiles = Profiles.findAll();
-    //Separate profiles based on whether they have been reported or not, sort both arrays by last name, then bring them back together
-    return _.union(_.sortBy(_.filter(allProfiles, function(item){return item.report.length > 0} ), 'lastName'), _.sortBy(allProfiles, 'lastName'));
+    const selectedInterests = Template.instance().messageFlags.get(selectedInterestsKey);
+    return _.sortBy(_.filter(allProfiles, profile => _.intersection(profile.interests, selectedInterests).length > 0), function (item) {return item.reputation.length * -1; } );
   },
 
   interests() {
@@ -40,9 +40,4 @@ Template.Admin_Page.helpers({
     return FlowRouter.getParam('username');
   },
 
-  findUsername(ID) {
-    return `${Profiles.findDoc(ID).firstName} ${Profiles.findDoc(ID).lastName}`;
-  },
-
 });
-

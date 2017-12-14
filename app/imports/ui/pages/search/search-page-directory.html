@@ -1,7 +1,11 @@
 <template name="Search_Page_Directory">
   <div style="margin-top: 20px" class="ui cards">
+    {{#if profiles}}
     {{#each profile in profiles }}
       {{> Directory_Profile profile=profile }}
     {{/each}}
+    {{else}}
+    <p>Your search did not produce any results.</p>
+    {{/if}}
   </div>
 </template>

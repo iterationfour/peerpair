@@ -30,9 +30,12 @@ class ProfileCollection extends BaseCollection {
       github: { type: SimpleSchema.RegEx.Url, optional: true },
       facebook: { type: SimpleSchema.RegEx.Url, optional: true },
       instagram: { type: SimpleSchema.RegEx.Url, optional: true },
-      report: { type: Boolean },
+      report: { type: Array, optional : true },
+      'report.$': {type: Object, blackbox: true },
       reputation: { type: Array, optional: true },
-      'reputation.$': { type: String },
+      'reputation.$': { type: String, blackbox: true },
+      favorites: { type: Array, optional: true },
+      'favorites.$': { type: String, blackbox: true },
     }, { tracker: Tracker }));
   }
 
@@ -58,11 +61,11 @@ class ProfileCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', github = '',
-      facebook = '', instagram = '', report = '', reputation = [] }) {
+      facebook = '', instagram = '', report = [], reputation = [], favorites = [] }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String,
-      bio: String, picture: String, report: Boolean };
-    check({ firstName, lastName, username, bio, picture, report }, checkPattern);
+      bio: String, picture: String, reputation: Array, report: Array, favorites: Array };
+    check({ firstName, lastName, username, bio, picture, reputation, report, favorites }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -82,7 +85,7 @@ class ProfileCollection extends BaseCollection {
     }
 
     return this._collection.insert({ firstName, lastName, username, bio, interests, picture, github,
-      facebook, instagram, report, reputation });
+      facebook, instagram, report, reputation, favorites });
   }
 
   /**
@@ -103,7 +106,8 @@ class ProfileCollection extends BaseCollection {
     const instagram = doc.instagram;
     const report = doc.report;
     const reputation = doc.reputation;
-    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report, reputation };
+    const favorites = doc.favorites;
+    return { firstName, lastName, username, bio, interests, picture, github, facebook, instagram, report, reputation, favorites };
   }
 
 

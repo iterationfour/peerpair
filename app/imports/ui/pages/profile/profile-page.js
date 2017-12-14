@@ -44,7 +44,12 @@ Template.Profile_Page.helpers({
   },
   userProfile() {
     return Profiles.findDoc(FlowRouter.getParam('username'));
-  }
+  },
+  favorites() {
+    let userprofile = Profiles.findDoc(FlowRouter.getParam('username'));
+    let userfavorites = userprofile.favorites;
+    return _.map(userfavorites, favoriteID => Profiles.findDoc(favoriteID));
+  },
 });
 
 Template.Profile_Page.events({
@@ -82,4 +87,3 @@ Template.Profile_Page.events({
     return false;
   },
 });
-

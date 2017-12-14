@@ -76,6 +76,15 @@ userRoutes.route('/search', {
   },
 });
 
+export const rankingPageRouteName = 'Ranking_Page';
+userRoutes.route('/rankings', {
+  name: rankingPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: rankingPageRouteName });
+  },
+});
+
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {

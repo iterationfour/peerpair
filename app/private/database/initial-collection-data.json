@@ -21,8 +21,9 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/beejay.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
         {
           "firstName": "Kian",
@@ -36,8 +37,9 @@
             "Computer Science General (BS)"
           ],
           "picture": "/images/kian.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
         {
           "firstName": "Arisa",
@@ -48,21 +50,9 @@
             "English (BA)"
           ],
           "picture": "/images/arisa.jpg",
-          "report": false,
-          "reputation": []
-        },
-        {
-          "firstName": "Andrew",
-          "lastName": "Obatake",
-          "username": "aobatake",
-          "github": "aobatake",
-          "bio": "I am an student studying Computer Engineering at the University of Hawaii.",
-          "interests": [
-            "Computer Engineering (BS)"
-          ],
-          "picture": "",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
         {
           "firstName": "Jessie",
@@ -74,8 +64,9 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/jessie.jpeg",
-          "report": true,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
         {
           "firstName": "Callie",
@@ -90,8 +81,9 @@
             "Japanese (BA)"
           ],
           "picture": "",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
         {
           "firstName": "Hepsy",
@@ -106,8 +98,9 @@
             "Dance (BA)"
           ],
           "picture": "",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
@@ -123,8 +116,9 @@
             "Second Language Studies (BA)"
           ],
           "picture": "/images/camden.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
@@ -139,14 +133,15 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kenneth.png",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Kayla",
           "lastName": "Amano",
-          "username": "kayla",
+          "username": "kamano4",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -155,14 +150,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kayla.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Jennifer",
           "lastName": "Chun",
-          "username": "jennifer",
+          "username": "jmchun3",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -171,14 +167,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/jennifer.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Joslyn",
           "lastName": "Hamada",
-          "username": "joslyn",
+          "username": "joslynh",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -187,14 +184,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/joslyn.jpg",
-          "report": true,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Emily",
           "lastName": "Lum",
-          "username": "emily",
+          "username": "emilyl99",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -203,14 +201,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/emily.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Jaimie",
           "lastName": "Obatake",
-          "username": "jaimie",
+          "username": "jobatake",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -219,14 +218,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/jaimie.jpg",
-          "report": true,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Mark",
           "lastName": "Cacal",
-          "username": "markc",
+          "username": "cacalm",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -235,14 +235,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/mark.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Kevin",
           "lastName": "Cho",
-          "username": "kevinc",
+          "username": "chokevin",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -251,14 +252,15 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kevin.jpg",
-          "report": true,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Josh Renzo",
           "lastName": "Claudio",
-          "username": "joshrc",
+          "username": "jrc808",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -267,14 +269,15 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/josh.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Kyaw",
           "lastName": "Hein",
-          "username": "kyaw",
+          "username": "khein",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -283,14 +286,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kyaw.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Sawinna",
           "lastName": "Huang",
-          "username": "sawinna",
+          "username": "huangjia",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -299,14 +303,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/sawinna.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Emily",
           "lastName": "Cane",
-          "username": "emilyk",
+          "username": "eekane",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -315,14 +320,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/emilyk.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Kevin",
           "lastName": "Liu",
-          "username": "kevinl",
+          "username": "liukevin",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -331,14 +337,15 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/kevinl.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Joseph",
           "lastName": "McConnel",
-          "username": "josephm",
+          "username": "josephmm",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -347,14 +354,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/joseph.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Rebecca",
           "lastName": "Rupley",
-          "username": "rebecca",
+          "username": "rrrupley",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -363,14 +371,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/rebecca.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Katherine",
           "lastName": "Shun-Gilmour",
-          "username": "katherine",
+          "username": "kshungil",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -379,14 +388,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/katherine.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Dylan",
           "lastName": "Tokita",
-          "username": "dylan",
+          "username": "dtokita",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -395,14 +405,15 @@
             "Computer Engineering (BS)"
           ],
           "picture": "/images/dylan.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Kevin",
           "lastName": "Wong",
-          "username": "kevinw",
+          "username": "kevin687",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -411,14 +422,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/kevinw.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Alex",
           "lastName": "Wong",
-          "username": "alex",
+          "username": "awong9",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -427,14 +439,15 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/alex.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         },
 
         {
           "firstName": "Tyler",
           "lastName": "Yamauchi",
-          "username": "tyler",
+          "username": "tylerjry",
           "github": "",
           "instagram": "",
           "facebook": "",
@@ -443,8 +456,9 @@
             "Electrical Engineering (BS)"
           ],
           "picture": "/images/tyler.jpg",
-          "report": false,
-          "reputation": []
+          "report": [],
+          "reputation": [],
+          "favorites": []
         }
 
       ]

@@ -35,10 +35,9 @@ Template.If_Authorized.helpers({
     const beejay = 'beejayi';
     const pj = 'johnson';
 
-    const Admins = [jessie, andrew, kian, beejay, pj];
+    const Admins = [jessie, kian, beejay, pj];
 
     if (_.contains(Admins, loggedInUserName)) {
-      console.log ('found loggedInUserName');
       return true;
     } else if (adminPage === routePage) {
       return false;
