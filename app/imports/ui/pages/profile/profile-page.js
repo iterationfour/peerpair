@@ -76,14 +76,7 @@ Template.Profile_Page.events({
   'click .delete': function (event) {
     event.preventDefault();
     if (confirm('Finished with task?')) {
-      // check(this.wClass, String);
-      // const task = Tasks.findOne(this._id);
-      // Profiles.findDoc(FlowRouter.getParam('username')).report
-      //Tasks.find(cleanData.first)
-
-      const tasks = event.target.value;
-      console.log(tasks);
-      Tasks.remove(FlowRouter.getParam('_id'));
+      Tasks.remove(event.currentTarget.id);
     }
     return false;
   },
