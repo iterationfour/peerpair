@@ -1,7 +1,11 @@
 <template name="Profile_Page_Directory">
   <div style="margin-top: 20px" class="ui cards">
+    {{#if profiles}}
     {{#each profile in profiles }}
       {{> Directory_Profile profile=profile }}
     {{/each}}
+    {{else}}
+    <p>You don't have any favorited users.</p>
+    {{/if}}
   </div>
 </template>
