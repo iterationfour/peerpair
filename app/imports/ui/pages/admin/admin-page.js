@@ -22,7 +22,7 @@ Template.Admin_Page.helpers({
     }
     // Find all profiles with the currently selected interests.
     const allProfiles = Profiles.findAll();
-    return _.sortBy(allProfiles, 'lastName');
+    return _.union(_.sortBy(_.filter(allProfiles, function(item){return item.report.length > 0} ), 'lastName'), _.sortBy(allProfiles, 'lastName'));
   },
 
   interests() {
