@@ -1,8 +1,11 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
+import { Meteor } from 'meteor/meteor';
+import { Tasks, TasksSchema } from '/imports/api/task/TaskCollection';
 
 const selectedInterestsKey = 'selectedInterests';
 
@@ -11,9 +14,14 @@ Template.Profile_Page.onCreated(function onCreated() {
   this.subscribe(Profiles.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedInterestsKey, undefined);
+  this.subscribe('Tasks');
 });
 
 Template.Profile_Page.helpers({
+  tasksList() {
+    console.log(Tasks.find());
+    return Tasks.find();
+  },
   profiles() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedInterestsKey)) {
@@ -45,9 +53,36 @@ Template.Profile_Page.helpers({
 });
 
 Template.Profile_Page.events({
-  'submit .filter-data-form'(event, instance) {
+  'submit .task-data-form'(event, instance) {
     event.preventDefault();
-    const selectedOptions = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
-    instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
+
+    const wClass = event.target.WClass.value;
+    const task = event.target.Task.value;
+    const dueDate = event.target.Due_Date.value;
+
+    const newTaskData = { wClass, task, dueDate };
+    // Clear out any old validation errors.
+    // instance.context.reset();
+    // Invoke clean so that newStudentData reflects what will be inserted.
+    //const cleanData = Tasks.getSchema().clean(newTaskData);
+    // Determine validity.
+    //instance.context.validate(cleanData);
+    //if (instance.context.isValid()) {
+    const id = Tasks.insert(newTaskData);
+    console.log (id);
+      //instance.messageFlags.set(displayErrorMessages, false);
+    //} else {
+      //instance.messageFlags.set(displayErrorMessages, true);
+    //}
+
+
+  },
+
+  'click .delete': function (event) {
+    event.preventDefault();
+    if (confirm('Finished with task?')) {
+      Tasks.remove(event.currentTarget.id);
+    }
+    return false;
   },
 });

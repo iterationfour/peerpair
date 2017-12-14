@@ -26,44 +26,42 @@
         </div>
         <div class="ten wide column">
           <h1>Todo List</h1>
-          <div class="ui fluid action input">
-          <input type="text" placeholder="Add Task">
-          <button class="ui button">Add</button>
-          </div>
-          <div class="ui middle aligned divided list">
-            <div class="item">
-              <div class="right floated content">
-                <div class="ui button">Done</div>
+          <form class="ui form task-data-form">
+            <div class="three fields">
+              <div class="three wide field">
+                {{> Text_Form_Control label="WClass" value=id placeholder="ICS314" required=true errorMessage=(fieldError "class")}}
               </div>
-              <div class="content">
-                [ICS314]User home page mock-up (Nov 21, Tuesday, 11:30pm)
+              <div class="ten wide field">
+                {{> Text_Form_Control label="Task" placeholder="Final Project: Milestone 2" required=true errorMessage=(fieldError "Todo")}}
               </div>
+              <div class="three wide field">
+                {{> Text_Form_Control label="Due_Date" placeholder="12/13/17" required=true errorMessage=(fieldError "DueDate")}}
+              </div>
+              <button class="ui primary button" type="submit">Submit</button>
             </div>
-            <div class="item">
-              <div class="right floated content">
-                <div class="ui button">Done</div>
-              </div>
-              <div class="content">
-                [ICS314]Reflect on Ethics (Nov 30, Thursday, 11:30pm)
-              </div>
-            </div>
-            <div class="item">
-              <div class="right floated content">
-                <div class="ui button">Done</div>
-              </div>
-              <div class="content">
-                [ICS314]Reflect on Design Patterns (Dec 5, Tuesday, 11:30pm)
-              </div>
-            </div>
-            <div class="item">
-              <div class="right floated content">
-                <div class="ui button">Done</div>
-              </div>
-              <div class="content">
-                [ICS314]Final Project Milestone 2 (Dec 7, Thursday, 11:30pm)
-              </div>
-            </div>
-          </div>
+          </form>
+          <table style="margin-top: 20px" class="ui celled table">
+            <thead>
+            <tr>
+              <th>Class</th>
+              <th>Task</th>
+              <th>Due Date</th>
+              <th>Done</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            {{#each todo in tasksList}}
+            <tr>
+              <td>{{todo.wClass}}</td>
+              <td>{{todo.task}}</td>
+              <td>{{todo.dueDate}}</td>
+              <td><button id="{{todo._id}}" class="ui button delete">Delete</button></td>
+            </tr>
+            {{/each}}
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="ui grid">
