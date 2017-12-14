@@ -1,5 +1,8 @@
 .ui.top.menu {
-  background-color: #3f51b5;
+  background: url("/images/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 0;
   margin-bottom: 20px;
 }
